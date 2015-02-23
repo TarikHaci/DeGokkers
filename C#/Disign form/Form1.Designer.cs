@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dier1 = new System.Windows.Forms.PictureBox();
             this.renBaan = new System.Windows.Forms.PictureBox();
             this.dier2 = new System.Windows.Forms.PictureBox();
@@ -184,6 +185,11 @@
             0,
             0,
             0});
+            this.wedtEuro.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.wedtEuro.Name = "wedtEuro";
             this.wedtEuro.Size = new System.Drawing.Size(49, 22);
             this.wedtEuro.TabIndex = 10;
@@ -217,9 +223,19 @@
             0,
             0,
             0});
+            this.hondNummer.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.hondNummer.Name = "hondNummer";
             this.hondNummer.Size = new System.Drawing.Size(56, 22);
             this.hondNummer.TabIndex = 12;
+            this.hondNummer.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.hondNummer.ValueChanged += new System.EventHandler(this.hondNummer_ValueChanged);
             // 
             // Weddenschap1
@@ -308,10 +324,11 @@
             this.Controls.Add(this.dier2);
             this.Controls.Add(this.dier1);
             this.Controls.Add(this.renBaan);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Rendieren Race";
+            this.Text = "6";
             ((System.ComponentModel.ISupportInitialize)(this.dier1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.renBaan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dier2)).EndInit();
