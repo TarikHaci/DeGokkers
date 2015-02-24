@@ -30,12 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.dier1 = new System.Windows.Forms.PictureBox();
-            this.renBaan = new System.Windows.Forms.PictureBox();
-            this.dier2 = new System.Windows.Forms.PictureBox();
-            this.dier3 = new System.Windows.Forms.PictureBox();
-            this.dier4 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.deelnemer1 = new System.Windows.Forms.RadioButton();
             this.deelnemer2 = new System.Windows.Forms.RadioButton();
             this.deelnemer3 = new System.Windows.Forms.RadioButton();
@@ -49,87 +43,33 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.goButton = new System.Windows.Forms.Button();
             this.tmrDog = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dier1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.renBaan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dier2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dier3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dier4)).BeginInit();
+            this.dier4 = new System.Windows.Forms.PictureBox();
+            this.dier3 = new System.Windows.Forms.PictureBox();
+            this.dier2 = new System.Windows.Forms.PictureBox();
+            this.dier1 = new System.Windows.Forms.PictureBox();
+            this.renBaan = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRendierNummer = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.lblSietseCash = new System.Windows.Forms.Label();
+            this.lblLidyCash = new System.Windows.Forms.Label();
+            this.lblFerCash = new System.Windows.Forms.Label();
+            this.lblNamePlayer = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.wedtEuro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hondNummer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dier4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dier3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dier2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dier1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.renBaan)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dier1
-            // 
-            this.dier1.Image = global::Disign_form.Properties.Resources.rendieren;
-            this.dier1.Location = new System.Drawing.Point(32, 0);
-            this.dier1.Margin = new System.Windows.Forms.Padding(4);
-            this.dier1.Name = "dier1";
-            this.dier1.Size = new System.Drawing.Size(116, 70);
-            this.dier1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.dier1.TabIndex = 1;
-            this.dier1.TabStop = false;
-            // 
-            // renBaan
-            // 
-            this.renBaan.Image = global::Disign_form.Properties.Resources.renbaan2;
-            this.renBaan.Location = new System.Drawing.Point(0, 0);
-            this.renBaan.Margin = new System.Windows.Forms.Padding(4);
-            this.renBaan.Name = "renBaan";
-            this.renBaan.Size = new System.Drawing.Size(1032, 346);
-            this.renBaan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.renBaan.TabIndex = 0;
-            this.renBaan.TabStop = false;
-            // 
-            // dier2
-            // 
-            this.dier2.Image = global::Disign_form.Properties.Resources.rendieren;
-            this.dier2.Location = new System.Drawing.Point(32, 97);
-            this.dier2.Margin = new System.Windows.Forms.Padding(4);
-            this.dier2.Name = "dier2";
-            this.dier2.Size = new System.Drawing.Size(116, 70);
-            this.dier2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.dier2.TabIndex = 2;
-            this.dier2.TabStop = false;
-            // 
-            // dier3
-            // 
-            this.dier3.Image = global::Disign_form.Properties.Resources.rendieren;
-            this.dier3.Location = new System.Drawing.Point(32, 175);
-            this.dier3.Margin = new System.Windows.Forms.Padding(4);
-            this.dier3.Name = "dier3";
-            this.dier3.Size = new System.Drawing.Size(116, 70);
-            this.dier3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.dier3.TabIndex = 3;
-            this.dier3.TabStop = false;
-            // 
-            // dier4
-            // 
-            this.dier4.Image = global::Disign_form.Properties.Resources.rendieren;
-            this.dier4.Location = new System.Drawing.Point(32, 267);
-            this.dier4.Margin = new System.Windows.Forms.Padding(4);
-            this.dier4.Name = "dier4";
-            this.dier4.Size = new System.Drawing.Size(116, 70);
-            this.dier4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.dier4.TabIndex = 4;
-            this.dier4.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(32, 455);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(287, 27);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "Minimum inzet: 5 euro";
             // 
             // deelnemer1
             // 
             this.deelnemer1.AutoSize = true;
-            this.deelnemer1.Location = new System.Drawing.Point(32, 490);
+            this.deelnemer1.Location = new System.Drawing.Point(13, 446);
             this.deelnemer1.Margin = new System.Windows.Forms.Padding(4);
             this.deelnemer1.Name = "deelnemer1";
             this.deelnemer1.Size = new System.Drawing.Size(68, 21);
@@ -141,7 +81,7 @@
             // deelnemer2
             // 
             this.deelnemer2.AutoSize = true;
-            this.deelnemer2.Location = new System.Drawing.Point(32, 517);
+            this.deelnemer2.Location = new System.Drawing.Point(13, 473);
             this.deelnemer2.Margin = new System.Windows.Forms.Padding(4);
             this.deelnemer2.Name = "deelnemer2";
             this.deelnemer2.Size = new System.Drawing.Size(55, 21);
@@ -154,7 +94,7 @@
             // deelnemer3
             // 
             this.deelnemer3.AutoSize = true;
-            this.deelnemer3.Location = new System.Drawing.Point(32, 546);
+            this.deelnemer3.Location = new System.Drawing.Point(13, 502);
             this.deelnemer3.Margin = new System.Windows.Forms.Padding(4);
             this.deelnemer3.Name = "deelnemer3";
             this.deelnemer3.Size = new System.Drawing.Size(50, 21);
@@ -166,7 +106,7 @@
             // wedt
             // 
             this.wedt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wedt.Location = new System.Drawing.Point(192, 586);
+            this.wedt.Location = new System.Drawing.Point(173, 542);
             this.wedt.Margin = new System.Windows.Forms.Padding(4);
             this.wedt.Name = "wedt";
             this.wedt.Size = new System.Drawing.Size(100, 28);
@@ -178,7 +118,7 @@
             // wedtEuro
             // 
             this.wedtEuro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wedtEuro.Location = new System.Drawing.Point(300, 590);
+            this.wedtEuro.Location = new System.Drawing.Point(281, 546);
             this.wedtEuro.Margin = new System.Windows.Forms.Padding(4);
             this.wedtEuro.Maximum = new decimal(new int[] {
             15,
@@ -186,7 +126,7 @@
             0,
             0});
             this.wedtEuro.Minimum = new decimal(new int[] {
-            1,
+            5,
             0,
             0,
             0});
@@ -205,7 +145,7 @@
             this.textBox2.BackColor = System.Drawing.SystemColors.Control;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(372, 591);
+            this.textBox2.Location = new System.Drawing.Point(353, 547);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -216,7 +156,7 @@
             // hondNummer
             // 
             this.hondNummer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.hondNummer.Location = new System.Drawing.Point(805, 586);
+            this.hondNummer.Location = new System.Drawing.Point(634, 542);
             this.hondNummer.Margin = new System.Windows.Forms.Padding(4);
             this.hondNummer.Maximum = new decimal(new int[] {
             4,
@@ -241,7 +181,7 @@
             // Weddenschap1
             // 
             this.Weddenschap1.BackColor = System.Drawing.SystemColors.Control;
-            this.Weddenschap1.Location = new System.Drawing.Point(791, 490);
+            this.Weddenschap1.Location = new System.Drawing.Point(620, 446);
             this.Weddenschap1.Margin = new System.Windows.Forms.Padding(4);
             this.Weddenschap1.Name = "Weddenschap1";
             this.Weddenschap1.ReadOnly = true;
@@ -252,7 +192,7 @@
             // weddenschap3
             // 
             this.weddenschap3.BackColor = System.Drawing.SystemColors.Control;
-            this.weddenschap3.Location = new System.Drawing.Point(791, 545);
+            this.weddenschap3.Location = new System.Drawing.Point(620, 501);
             this.weddenschap3.Margin = new System.Windows.Forms.Padding(4);
             this.weddenschap3.Name = "weddenschap3";
             this.weddenschap3.ReadOnly = true;
@@ -263,7 +203,7 @@
             // weddenschap2
             // 
             this.weddenschap2.BackColor = System.Drawing.SystemColors.Control;
-            this.weddenschap2.Location = new System.Drawing.Point(791, 517);
+            this.weddenschap2.Location = new System.Drawing.Point(620, 473);
             this.weddenschap2.Margin = new System.Windows.Forms.Padding(4);
             this.weddenschap2.Name = "weddenschap2";
             this.weddenschap2.ReadOnly = true;
@@ -276,7 +216,7 @@
             this.textBox3.BackColor = System.Drawing.SystemColors.Control;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(949, 455);
+            this.textBox3.Location = new System.Drawing.Point(778, 411);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -287,7 +227,7 @@
             // goButton
             // 
             this.goButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.goButton.Location = new System.Drawing.Point(1237, 581);
+            this.goButton.Location = new System.Drawing.Point(1066, 537);
             this.goButton.Margin = new System.Windows.Forms.Padding(4);
             this.goButton.Name = "goButton";
             this.goButton.Size = new System.Drawing.Size(100, 33);
@@ -301,11 +241,179 @@
             this.tmrDog.Interval = 10;
             this.tmrDog.Tick += new System.EventHandler(this.tmrDog_Tick);
             // 
+            // dier4
+            // 
+            this.dier4.Image = global::Disign_form.Properties.Resources.rendieren;
+            this.dier4.Location = new System.Drawing.Point(32, 267);
+            this.dier4.Margin = new System.Windows.Forms.Padding(4);
+            this.dier4.Name = "dier4";
+            this.dier4.Size = new System.Drawing.Size(116, 70);
+            this.dier4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dier4.TabIndex = 4;
+            this.dier4.TabStop = false;
+            // 
+            // dier3
+            // 
+            this.dier3.Image = global::Disign_form.Properties.Resources.rendieren;
+            this.dier3.Location = new System.Drawing.Point(32, 175);
+            this.dier3.Margin = new System.Windows.Forms.Padding(4);
+            this.dier3.Name = "dier3";
+            this.dier3.Size = new System.Drawing.Size(116, 70);
+            this.dier3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dier3.TabIndex = 3;
+            this.dier3.TabStop = false;
+            // 
+            // dier2
+            // 
+            this.dier2.Image = global::Disign_form.Properties.Resources.rendieren;
+            this.dier2.Location = new System.Drawing.Point(32, 97);
+            this.dier2.Margin = new System.Windows.Forms.Padding(4);
+            this.dier2.Name = "dier2";
+            this.dier2.Size = new System.Drawing.Size(116, 70);
+            this.dier2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dier2.TabIndex = 2;
+            this.dier2.TabStop = false;
+            // 
+            // dier1
+            // 
+            this.dier1.Image = global::Disign_form.Properties.Resources.rendieren;
+            this.dier1.Location = new System.Drawing.Point(32, 0);
+            this.dier1.Margin = new System.Windows.Forms.Padding(4);
+            this.dier1.Name = "dier1";
+            this.dier1.Size = new System.Drawing.Size(116, 70);
+            this.dier1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dier1.TabIndex = 1;
+            this.dier1.TabStop = false;
+            // 
+            // renBaan
+            // 
+            this.renBaan.BackColor = System.Drawing.Color.Transparent;
+            this.renBaan.Image = global::Disign_form.Properties.Resources.renbaan2;
+            this.renBaan.Location = new System.Drawing.Point(0, 0);
+            this.renBaan.Margin = new System.Windows.Forms.Padding(4);
+            this.renBaan.Name = "renBaan";
+            this.renBaan.Size = new System.Drawing.Size(1032, 346);
+            this.renBaan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.renBaan.TabIndex = 0;
+            this.renBaan.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(32, 411);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(287, 27);
+            this.textBox1.TabIndex = 18;
+            this.textBox1.Text = "Minimum inzet 5 Euro!";
+            // 
+            // txtRendierNummer
+            // 
+            this.txtRendierNummer.BackColor = System.Drawing.Color.OliveDrab;
+            this.txtRendierNummer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRendierNummer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRendierNummer.Location = new System.Drawing.Point(0, 24);
+            this.txtRendierNummer.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRendierNummer.Name = "txtRendierNummer";
+            this.txtRendierNummer.ReadOnly = true;
+            this.txtRendierNummer.Size = new System.Drawing.Size(16, 27);
+            this.txtRendierNummer.TabIndex = 19;
+            this.txtRendierNummer.Text = "1";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.OliveDrab;
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(0, 116);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(16, 27);
+            this.textBox4.TabIndex = 20;
+            this.textBox4.Text = "2";
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.OliveDrab;
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(0, 196);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(16, 27);
+            this.textBox5.TabIndex = 21;
+            this.textBox5.Text = "3";
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.Color.OliveDrab;
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(0, 292);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(16, 27);
+            this.textBox6.TabIndex = 22;
+            this.textBox6.Text = "4";
+            // 
+            // lblSietseCash
+            // 
+            this.lblSietseCash.AutoSize = true;
+            this.lblSietseCash.Location = new System.Drawing.Point(88, 448);
+            this.lblSietseCash.Name = "lblSietseCash";
+            this.lblSietseCash.Size = new System.Drawing.Size(16, 17);
+            this.lblSietseCash.TabIndex = 23;
+            this.lblSietseCash.Text = "€";
+            // 
+            // lblLidyCash
+            // 
+            this.lblLidyCash.AutoSize = true;
+            this.lblLidyCash.Location = new System.Drawing.Point(88, 476);
+            this.lblLidyCash.Name = "lblLidyCash";
+            this.lblLidyCash.Size = new System.Drawing.Size(16, 17);
+            this.lblLidyCash.TabIndex = 24;
+            this.lblLidyCash.Text = "€";
+            // 
+            // lblFerCash
+            // 
+            this.lblFerCash.AutoSize = true;
+            this.lblFerCash.Location = new System.Drawing.Point(88, 504);
+            this.lblFerCash.Name = "lblFerCash";
+            this.lblFerCash.Size = new System.Drawing.Size(16, 17);
+            this.lblFerCash.TabIndex = 25;
+            this.lblFerCash.Text = "€";
+            // 
+            // lblNamePlayer
+            // 
+            this.lblNamePlayer.AutoSize = true;
+            this.lblNamePlayer.Location = new System.Drawing.Point(29, 546);
+            this.lblNamePlayer.Name = "lblNamePlayer";
+            this.lblNamePlayer.Size = new System.Drawing.Size(45, 17);
+            this.lblNamePlayer.TabIndex = 26;
+            this.lblNamePlayer.Text = "Naam";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1372, 646);
+            this.Controls.Add(this.lblNamePlayer);
+            this.Controls.Add(this.lblFerCash);
+            this.Controls.Add(this.lblLidyCash);
+            this.Controls.Add(this.lblSietseCash);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtRendierNummer);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.goButton);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.weddenschap2);
@@ -318,7 +426,6 @@
             this.Controls.Add(this.deelnemer3);
             this.Controls.Add(this.deelnemer2);
             this.Controls.Add(this.deelnemer1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dier4);
             this.Controls.Add(this.dier3);
             this.Controls.Add(this.dier2);
@@ -327,15 +434,16 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "6";
-            ((System.ComponentModel.ISupportInitialize)(this.dier1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.renBaan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dier2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dier3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dier4)).EndInit();
+            this.Text = "Rendieren Race";
             ((System.ComponentModel.ISupportInitialize)(this.wedtEuro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hondNummer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dier4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dier3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dier2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dier1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.renBaan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -348,7 +456,6 @@
         private System.Windows.Forms.PictureBox dier2;
         private System.Windows.Forms.PictureBox dier3;
         private System.Windows.Forms.PictureBox dier4;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RadioButton deelnemer1;
         private System.Windows.Forms.RadioButton deelnemer2;
         private System.Windows.Forms.RadioButton deelnemer3;
@@ -362,6 +469,15 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button goButton;
         private System.Windows.Forms.Timer tmrDog;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRendierNummer;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label lblSietseCash;
+        private System.Windows.Forms.Label lblLidyCash;
+        private System.Windows.Forms.Label lblFerCash;
+        private System.Windows.Forms.Label lblNamePlayer;
     }
 }
 

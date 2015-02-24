@@ -13,6 +13,7 @@ namespace Disign_form
     {
         Random rand = new Random();
         GreyReindeer[] dogArray = new GreyReindeer[4];
+                Guy[] guyArray = new Guy[3];
         public Form1()
         {
             InitializeComponent();
@@ -38,7 +39,7 @@ namespace Disign_form
         {
             if (wedtEuro.Value >= 5 && hondNummer.Value > 0 && deelnemer1.Checked)
             {
-                Weddenschap1.Text = ("Sietse wedt "+ wedtEuro.Value + " Euro op rendier nummer " + hondNummer.Value);
+                Weddenschap1.Text = ("Sietse wedt " + wedtEuro.Value + " Euro op rendier nummer " + hondNummer.Value);
             }
             else if (wedtEuro.Value >= 5 && hondNummer.Value > 0 && deelnemer2.Checked)
             {
@@ -66,13 +67,18 @@ namespace Disign_form
         {
             for (int i = 0; i < dogArray.Length; i++)
             {
-                dogArray[i].Run(rand);
+                if (dogArray[i].IsFinish()) 
+                    dogArray[i].Run(rand);
             }
         }
 
         private void goButton_Click(object sender, EventArgs e)
         {
             tmrDog.Enabled = true;
+            for (int i = 0; i < dogArray.Length; i++)
+            {
+                dogArray[i].TakeStartingPosition();
+            }
         }
         public void InitDogs()
         {
@@ -81,6 +87,11 @@ namespace Disign_form
             dogArray[2] = new GreyReindeer(dier3);
             dogArray[3] = new GreyReindeer(dier4);
         }
-
+        public void InitGuys()
+        {
+            guyArray[0] = new Guy(50, "Sietse", lblSietseCash);
+            guyArray[1] = new Guy(75, "Lidy", lblLidyCash);
+            guyArray[2] = new Guy(45, "Fer", lblFerCash);
+        }
     }
 }

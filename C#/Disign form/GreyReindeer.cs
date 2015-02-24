@@ -8,24 +8,56 @@ namespace Disign_form
 {
     class GreyReindeer
     {
+        //PROPERTIES
         public int RaceTrackLegth; // De lengte van de renbaan
         public PictureBox MyPictureBox = null;
         public Random Randomizer; //Een instantie van Random (= Willekeurig)
+        private bool isFinish;
+
+        //CONSTRUCTOR
         public GreyReindeer(PictureBox mypicturebox)
         {
             this.MyPictureBox = mypicturebox;
+            isFinish = false;
         }
 
-
+        //METHODS
         public void Run(Random random)
         {
-            
-            MyPictureBox.Left += random.Next(1, 4);
-            
+
+            if (MyPictureBox.Left < 685)
+            {
+                MyPictureBox.Left += random.Next(1, 4);
+            }
+
         }
         public void TakeStartingPosition()
         {
-            // Wijzig mijn locatie naar de startlijn. 
+            if (isFinish)
+            {
+                MyPictureBox.Left = 0;
+            }
+
+
+        }
+        public bool IsFinish()
+        {
+            if (!isFinish)
+            {
+                if (MyPictureBox.Left >= 685)
+                {
+                    isFinish = true;
+                }
+                else
+                {
+                    isFinish = false;
+                }
+            }
+
+            if (isFinish)
+                return false;
+
+            else return true;
         }
     }
 }
