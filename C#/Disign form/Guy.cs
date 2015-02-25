@@ -14,32 +14,19 @@ namespace Disign_form
         public int Cash;
         public Label MyLabel;
 
-        public int cash
-        {
-            get { return Cash; }
-            set 
-            {
-                Cash = value;
-                if(MyLabel != null)
-                    MyLabel.Text = Cash.ToString();
-            }
-        }
-
-
         //CONSTRUCTOR
         public Guy(int Cash, string Name, Label MyLabel)
         {
-            
+            this.Cash = Cash;
             this.Name = Name;
             this.MyLabel = MyLabel;
-            this.cash = Cash;
         }
 
 
 
         public void UpdateLabels()
         {
-            MyLabel.Text = Cash.ToString();
+
 
         }
 

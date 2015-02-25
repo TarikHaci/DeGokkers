@@ -29,24 +29,35 @@ namespace Disign_form
             {
                 MyPictureBox.Left += random.Next(1, 4);
             }
-            else
-            {
-                isFinish = true;
-            }
-                
 
         }
         public void TakeStartingPosition()
         {
-            MyPictureBox.Left = 0;
-            isFinish = false;
+            if (isFinish)
+            {
+                MyPictureBox.Left = 0;
+            }
 
 
         }
-
         public bool IsFinish()
         {
-            return isFinish;
+            if (!isFinish)
+            {
+                if (MyPictureBox.Left >= 685)
+                {
+                    isFinish = true;
+                }
+                else
+                {
+                    isFinish = false;
+                }
+            }
+
+            if (isFinish)
+                return false;
+
+            else return true;
         }
     }
 }
