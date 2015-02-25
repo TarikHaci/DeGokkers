@@ -13,11 +13,14 @@ namespace Disign_form
     {
         Random rand = new Random();
         GreyReindeer[] dogArray = new GreyReindeer[4];
-                Guy[] guyArray = new Guy[3];
+        Guy[] guyArray = new Guy[3];
+        int dogFinished;
         public Form1()
         {
             InitializeComponent();
             InitDogs();
+            InitGuys();
+            dogFinished = 0;
         }
 
         private void deelnemer1_CheckedChanged(object sender, EventArgs e)
@@ -65,15 +68,32 @@ namespace Disign_form
 
         private void tmrDog_Tick(object sender, EventArgs e)
         {
-            for (int i = 0; i < dogArray.Length; i++)
+            if (CheckFinish())
             {
-                if (dogArray[i].IsFinish()) 
-                    dogArray[i].Run(rand);
+                for (int i = 0; i < dogArray.Length; i++)
+                {
+                    if (!dogArray[i].IsFinish())
+                    {
+                        dogArray[i].Run(rand);
+                    }
+                }
             }
+            else
+            {
+                tmrDog.Enabled = false;
+                MessageBox.Show("Ieder hond is gefinisht {0}", "hans peter");
+                goButton.Enabled = true;
+            }
+
+
+
+
+            
         }
 
         private void goButton_Click(object sender, EventArgs e)
         {
+            goButton.Enabled = false;
             tmrDog.Enabled = true;
             for (int i = 0; i < dogArray.Length; i++)
             {
@@ -92,6 +112,17 @@ namespace Disign_form
             guyArray[0] = new Guy(50, "Sietse", lblSietseCash);
             guyArray[1] = new Guy(75, "Lidy", lblLidyCash);
             guyArray[2] = new Guy(45, "Fer", lblFerCash);
+        }
+        public bool CheckFinish()
+        {
+            for (int i = 0; i < dogArray.Length; i++)
+            {
+                if (!dogArray[i].IsFinish())
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

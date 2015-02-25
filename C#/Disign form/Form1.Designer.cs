@@ -365,7 +365,7 @@
             // lblSietseCash
             // 
             this.lblSietseCash.AutoSize = true;
-            this.lblSietseCash.Location = new System.Drawing.Point(88, 448);
+            this.lblSietseCash.Location = new System.Drawing.Point(88, 451);
             this.lblSietseCash.Name = "lblSietseCash";
             this.lblSietseCash.Size = new System.Drawing.Size(16, 17);
             this.lblSietseCash.TabIndex = 23;
