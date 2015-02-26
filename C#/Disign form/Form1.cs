@@ -23,11 +23,6 @@ namespace Disign_form
             dogFinished = 0;
         }
 
-        private void deelnemer1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void wedtEuro_ValueChanged(object sender, EventArgs e)
         {
 
@@ -84,10 +79,6 @@ namespace Disign_form
                 MessageBox.Show("Ieder hond is gefinisht {0}", "hans peter");
                 goButton.Enabled = true;
             }
-
-
-
-
             
         }
 
@@ -124,5 +115,30 @@ namespace Disign_form
             }
             return false;
         }
+
+        private void deelnemer1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (deelnemer1.Checked)
+            {
+                lblNamePlayer.Text = deelnemer1.Text;
+            }
+        }
+
+        private void deelnemer2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (deelnemer2.Checked)
+            {
+                lblNamePlayer.Text = deelnemer2.Text;
+            }
+        }
+
+        private void deelnemer3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (deelnemer3.Checked)
+            {
+                lblNamePlayer.Text = deelnemer3.Text;
+            }
+        }
+        
     }
 }

@@ -22,3 +22,13 @@ C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign form.c
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign_form.Form1.resources
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign_form.Properties.Resources.resources
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign form.csproj.GenerateResource.Cache
+C:\Users\stijno666\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign form.exe
+C:\Users\stijno666\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign form.pdb
+C:\Users\stijno666\Desktop\Disign form\obj\Debug\Disign form.exe
+C:\Users\stijno666\Desktop\Disign form\obj\Debug\Disign form.pdb
+C:\Users\stijno666\Desktop\Disign form\obj\Debug\Disign form.csprojResolveAssemblyReference.cache
+C:\Users\stijno666\Desktop\Disign form\obj\Debug\Disign_form.Form1.resources
+C:\Users\stijno666\Desktop\Disign form\obj\Debug\Disign_form.Properties.Resources.resources
+C:\Users\stijno666\Desktop\Disign form\obj\Debug\Disign form.csproj.GenerateResource.Cache
+C:\Users\stijno666\Desktop\Disign form\bin\Debug\Disign form.exe
+C:\Users\stijno666\Desktop\Disign form\bin\Debug\Disign form.pdb
