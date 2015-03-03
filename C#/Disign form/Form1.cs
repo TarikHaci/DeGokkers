@@ -23,16 +23,6 @@ namespace Disign_form
             dogFinished = 0;
         }
 
-        private void wedtEuro_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hondNummer_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void wedt_Click(object sender, EventArgs e)
         {
             if (wedtEuro.Value >= 5 && hondNummer.Value > 0 && deelnemer1.Checked)
@@ -71,15 +61,19 @@ namespace Disign_form
                     {
                         dogArray[i].Run(rand);
                     }
+                    else if(dogArray[i].GetLeftPosition() >= 685 && !dogArray[i].IsFinish())
+                    {
+                        dogFinished++;
+                        SetPosition(dogArray[i]);
+                    }
                 }
             }
             else
             {
                 tmrDog.Enabled = false;
-                MessageBox.Show("Ieder hond is gefinisht {0}", "hans peter");
+                MessageBox.Show("Ieder hond is gefinisht {0}");
                 goButton.Enabled = true;
             }
-            
         }
 
         private void goButton_Click(object sender, EventArgs e)
@@ -108,37 +102,48 @@ namespace Disign_form
         {
             for (int i = 0; i < dogArray.Length; i++)
             {
-                if (!dogArray[i].IsFinish())
+                if (dogFinished == 4)
                 {
-                    return true;
+                    return false;
                 }
             }
-            return false;
+            return true;
         }
-
-        private void deelnemer1_CheckedChanged(object sender, EventArgs e)
+        public void SetPosition(GreyReindeer dog)
         {
-            if (deelnemer1.Checked)
+            switch (dogFinished)
             {
-                lblNamePlayer.Text = deelnemer1.Text;
+                case 0:
+                    dog.SetPosition(Position.first);
+                    break;
+                case 1:
+                    dog.SetPosition(Position.second);
+                    break;
+                case 2:
+                    dog.SetPosition(Position.third);
+                    break;
+                case 3:
+                    dog.SetPosition(Position.fourth);
+                    break;
+                default:
+                    break;
             }
         }
 
-        private void deelnemer2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (deelnemer2.Checked)
+            private void deelnemer1_MouseClick(object sender, MouseEventArgs e)
             {
-                lblNamePlayer.Text = deelnemer2.Text;
+                if (deelnemer1.Checked)
+                {
+                    lblNamePlayer.Text = deelnemer1.Text;
+                }
+                else if (deelnemer2.Checked)
+                {
+                    lblNamePlayer.Text = deelnemer2.Text;
+                }
+                else
+                {
+                    lblNamePlayer.Text = deelnemer3.Text;
+                }
             }
-        }
-
-        private void deelnemer3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (deelnemer3.Checked)
-            {
-                lblNamePlayer.Text = deelnemer3.Text;
-            }
-        }
-        
     }
 }

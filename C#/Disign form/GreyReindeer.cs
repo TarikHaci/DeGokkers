@@ -6,14 +6,17 @@ using System.Windows.Forms;
 
 namespace Disign_form
 {
-    class GreyReindeer
+    public enum Position { first, second, third, fourth };
+
+
+    public class GreyReindeer
     {
         //PROPERTIES
         public int RaceTrackLegth; // De lengte van de renbaan
         public PictureBox MyPictureBox = null;
         public Random Randomizer; //Een instantie van Random (= Willekeurig)
         private bool isFinish;
-
+        private Position position;
         //CONSTRUCTOR
         public GreyReindeer(PictureBox mypicturebox)
         {
@@ -29,7 +32,7 @@ namespace Disign_form
             {
                 MyPictureBox.Left += random.Next(1, 4);
             }
-            else
+            else 
             {
                 isFinish = true;
             }
@@ -47,6 +50,14 @@ namespace Disign_form
         public bool IsFinish()
         {
             return isFinish;
+        }
+        public void SetPosition(Position position)
+        {
+            this.position = position;
+        }
+        public int GetLeftPosition()
+        {
+            return MyPictureBox.Left;
         }
     }
 }
