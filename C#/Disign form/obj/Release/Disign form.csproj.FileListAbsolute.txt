@@ -1,8 +1,0 @@
-C:\Users\Tarik\Desktop\Disign form\bin\Release\Disign form.exe
-C:\Users\Tarik\Desktop\Disign form\bin\Release\Disign form.pdb
-C:\Users\Tarik\Desktop\Disign form\obj\Release\Disign form.csprojResolveAssemblyReference.cache
-C:\Users\Tarik\Desktop\Disign form\obj\Release\Disign_form.Form1.resources
-C:\Users\Tarik\Desktop\Disign form\obj\Release\Disign_form.Properties.Resources.resources
-C:\Users\Tarik\Desktop\Disign form\obj\Release\Disign form.csproj.GenerateResource.Cache
-C:\Users\Tarik\Desktop\Disign form\obj\Release\Disign form.exe
-C:\Users\Tarik\Desktop\Disign form\obj\Release\Disign form.pdb
