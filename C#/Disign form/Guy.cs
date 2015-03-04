@@ -17,10 +17,10 @@ namespace Disign_form
         public int cash
         {
             get { return Cash; }
-            set 
+            set
             {
                 Cash = value;
-                if(MyLabel != null)
+                if (MyLabel != null)
                     MyLabel.Text = Cash.ToString();
             }
         }
@@ -29,7 +29,7 @@ namespace Disign_form
         //CONSTRUCTOR
         public Guy(int Cash, string Name, Label MyLabel)
         {
-            
+
             this.Name = Name;
             this.MyLabel = MyLabel;
             this.cash = Cash;

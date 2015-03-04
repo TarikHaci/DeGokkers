@@ -32,3 +32,11 @@ C:\Users\stijno666\Desktop\Disign form\obj\Debug\Disign_form.Properties.Resource
 C:\Users\stijno666\Desktop\Disign form\obj\Debug\Disign form.csproj.GenerateResource.Cache
 C:\Users\stijno666\Desktop\Disign form\bin\Debug\Disign form.exe
 C:\Users\stijno666\Desktop\Disign form\bin\Debug\Disign form.pdb
+C:\Users\Tarik\Desktop\jatoch\Disign form\obj\Debug\Disign form.exe
+C:\Users\Tarik\Desktop\jatoch\Disign form\obj\Debug\Disign form.pdb
+C:\Users\Tarik\Desktop\jatoch\Disign form\bin\Debug\Disign form.exe
+C:\Users\Tarik\Desktop\jatoch\Disign form\bin\Debug\Disign form.pdb
+C:\Users\Tarik\Desktop\jatoch\Disign form\obj\Debug\Disign form.csprojResolveAssemblyReference.cache
+C:\Users\Tarik\Desktop\jatoch\Disign form\obj\Debug\Disign_form.Form1.resources
+C:\Users\Tarik\Desktop\jatoch\Disign form\obj\Debug\Disign_form.Properties.Resources.resources
+C:\Users\Tarik\Desktop\jatoch\Disign form\obj\Debug\Disign form.csproj.GenerateResource.Cache

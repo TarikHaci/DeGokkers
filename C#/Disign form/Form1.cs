@@ -23,16 +23,6 @@ namespace Disign_form
             dogFinished = 0;
         }
 
-        private void wedtEuro_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hondNummer_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void wedt_Click(object sender, EventArgs e)
         {
             if (wedtEuro.Value >= 5 && hondNummer.Value > 0 && deelnemer1.Checked)
@@ -63,7 +53,7 @@ namespace Disign_form
 
         private void tmrDog_Tick(object sender, EventArgs e)
         {
-            if (CheckFinish())
+            if (dogFinished < 4)
             {
                 for (int i = 0; i < dogArray.Length; i++)
                 {
@@ -71,15 +61,23 @@ namespace Disign_form
                     {
                         dogArray[i].Run(rand);
                     }
+                    if (dogArray[i].GetLeftPosition() >= 685 && !dogArray[i].IsFinish())
+                    {
+                        
+                        SetPosition(dogArray[i]);
+                        dogArray[i].RefreshLabel();
+                        dogArray[i].SetFinish();
+                        dogFinished++;
+                    }
                 }
             }
             else
             {
                 tmrDog.Enabled = false;
-                MessageBox.Show("Ieder hond is gefinisht {0}", "hans peter");
+                MessageBox.Show("Ieder hond is gefinisht {0}");
                 goButton.Enabled = true;
+                dogFinished = 0;
             }
-            
         }
 
         private void goButton_Click(object sender, EventArgs e)
@@ -93,10 +91,10 @@ namespace Disign_form
         }
         public void InitDogs()
         {
-            dogArray[0] = new GreyReindeer(dier1);
-            dogArray[1] = new GreyReindeer(dier2);
-            dogArray[2] = new GreyReindeer(dier3);
-            dogArray[3] = new GreyReindeer(dier4);
+            dogArray[0] = new GreyReindeer(dier1, lblfinish1);
+            dogArray[1] = new GreyReindeer(dier2, lblfinish2);
+            dogArray[2] = new GreyReindeer(dier3, lblfinish3);
+            dogArray[3] = new GreyReindeer(dier4, lblfinish4);
         }
         public void InitGuys()
         {
@@ -106,39 +104,49 @@ namespace Disign_form
         }
         public bool CheckFinish()
         {
-            for (int i = 0; i < dogArray.Length; i++)
-            {
-                if (!dogArray[i].IsFinish())
+
+                if (dogFinished == 4)
                 {
-                    return true;
+                    return false;
                 }
+            
+            return true;
+        }
+        public void SetPosition(GreyReindeer dog)
+        {
+            switch (dogFinished)
+            {
+                case 0:
+                    dog.SetPosition(Position.first);
+                    break;
+                case 1:
+                    dog.SetPosition(Position.second);
+                    break;
+                case 2:
+                    dog.SetPosition(Position.third);
+                    break;
+                case 3:
+                    dog.SetPosition(Position.fourth);
+                    break;
+                default:
+                    break;
             }
-            return false;
         }
 
-        private void deelnemer1_CheckedChanged(object sender, EventArgs e)
+        private void deelnemer1_MouseClick(object sender, MouseEventArgs e)
         {
             if (deelnemer1.Checked)
             {
                 lblNamePlayer.Text = deelnemer1.Text;
             }
-        }
-
-        private void deelnemer2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (deelnemer2.Checked)
+            else if (deelnemer2.Checked)
             {
                 lblNamePlayer.Text = deelnemer2.Text;
             }
-        }
-
-        private void deelnemer3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (deelnemer3.Checked)
+            else
             {
                 lblNamePlayer.Text = deelnemer3.Text;
             }
         }
-        
     }
 }
