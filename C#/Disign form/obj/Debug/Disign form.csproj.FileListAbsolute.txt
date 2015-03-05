@@ -19,7 +19,6 @@ C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign form.p
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\bin\Debug\Disign form.exe
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\bin\Debug\Disign form.pdb
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign form.csprojResolveAssemblyReference.cache
-C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign_form.Form1.resources
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign_form.Properties.Resources.resources
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign form.csproj.GenerateResource.Cache
 C:\Users\stijno666\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign form.exe
@@ -40,3 +39,4 @@ C:\Users\Tarik\Desktop\jatoch\Disign form\obj\Debug\Disign form.csprojResolveAss
 C:\Users\Tarik\Desktop\jatoch\Disign form\obj\Debug\Disign_form.Form1.resources
 C:\Users\Tarik\Desktop\jatoch\Disign form\obj\Debug\Disign_form.Properties.Resources.resources
 C:\Users\Tarik\Desktop\jatoch\Disign form\obj\Debug\Disign form.csproj.GenerateResource.Cache
+C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign_form.FormRenbaan.resources

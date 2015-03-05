@@ -7,15 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Disign_form
+namespace DeGokkers
 {
-    public partial class Form1 : Form
+    public partial class FormRenbaan : Form
     {
         Random rand = new Random();
-        GreyReindeer[] dogArray = new GreyReindeer[4];
+        GreyReindeer[] ReindeerArray = new GreyReindeer[4];
         Guy[] guyArray = new Guy[3];
         int dogFinished;
-        public Form1()
+        public FormRenbaan()
         {
             InitializeComponent();
             InitDogs();
@@ -55,18 +55,18 @@ namespace Disign_form
         {
             if (dogFinished < 4)
             {
-                for (int i = 0; i < dogArray.Length; i++)
+                for (int i = 0; i < ReindeerArray.Length; i++)
                 {
-                    if (!dogArray[i].IsFinish())
+                    if (!ReindeerArray[i].IsFinish())
                     {
-                        dogArray[i].Run(rand);
+                        ReindeerArray[i].Run(rand);
                     }
-                    if (dogArray[i].GetLeftPosition() >= 685 && !dogArray[i].IsFinish())
+                    if (ReindeerArray[i].GetLeftPosition() >= 685 && !ReindeerArray[i].IsFinish())
                     {
                         
-                        SetPosition(dogArray[i]);
-                        dogArray[i].RefreshLabel();
-                        dogArray[i].SetFinish();
+                        SetPosition(ReindeerArray[i]);
+                        ReindeerArray[i].RefreshLabel();
+                        ReindeerArray[i].SetFinish();
                         dogFinished++;
                     }
                 }
@@ -74,7 +74,7 @@ namespace Disign_form
             else
             {
                 tmrDog.Enabled = false;
-                MessageBox.Show("Ieder hond is gefinisht {0}");
+                MessageBox.Show("Alle rendieren zijn gefinisht!");
                 goButton.Enabled = true;
                 dogFinished = 0;
             }
@@ -84,17 +84,17 @@ namespace Disign_form
         {
             goButton.Enabled = false;
             tmrDog.Enabled = true;
-            for (int i = 0; i < dogArray.Length; i++)
+            for (int i = 0; i < ReindeerArray.Length; i++)
             {
-                dogArray[i].TakeStartingPosition();
+                ReindeerArray[i].TakeStartingPosition();
             }
         }
         public void InitDogs()
         {
-            dogArray[0] = new GreyReindeer(dier1, lblfinish1);
-            dogArray[1] = new GreyReindeer(dier2, lblfinish2);
-            dogArray[2] = new GreyReindeer(dier3, lblfinish3);
-            dogArray[3] = new GreyReindeer(dier4, lblfinish4);
+            ReindeerArray[0] = new GreyReindeer(dier1, lblfinish1);
+            ReindeerArray[1] = new GreyReindeer(dier2, lblfinish2);
+            ReindeerArray[2] = new GreyReindeer(dier3, lblfinish3);
+            ReindeerArray[3] = new GreyReindeer(dier4, lblfinish4);
         }
         public void InitGuys()
         {

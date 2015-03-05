@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Disign_form
+namespace DeGokkers
 {
     static class Program
     {
@@ -15,7 +15,7 @@ namespace Disign_form
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormRenbaan());
         }
     }
 }

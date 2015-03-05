@@ -1,6 +1,6 @@
-﻿namespace Disign_form
+﻿namespace DeGokkers
 {
-    partial class Form1
+    partial class FormRenbaan
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRenbaan));
             this.wedt = new System.Windows.Forms.Button();
             this.wedtEuro = new System.Windows.Forms.NumericUpDown();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -40,13 +40,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.goButton = new System.Windows.Forms.Button();
             this.tmrDog = new System.Windows.Forms.Timer(this.components);
-            this.dier4 = new System.Windows.Forms.PictureBox();
-            this.dier3 = new System.Windows.Forms.PictureBox();
-            this.dier2 = new System.Windows.Forms.PictureBox();
-            this.dier1 = new System.Windows.Forms.PictureBox();
-            this.renBaan = new System.Windows.Forms.PictureBox();
-            this.txtRendierNummer = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.lblSietseCash = new System.Windows.Forms.Label();
@@ -61,13 +54,20 @@
             this.lblfinish2 = new System.Windows.Forms.Label();
             this.lblfinish4 = new System.Windows.Forms.Label();
             this.lblfinish3 = new System.Windows.Forms.Label();
+            this.txtRendierNummer = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.dier4 = new System.Windows.Forms.PictureBox();
+            this.dier3 = new System.Windows.Forms.PictureBox();
+            this.dier2 = new System.Windows.Forms.PictureBox();
+            this.dier1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.wedtEuro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hondNummer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dier4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dier3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dier2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dier1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.renBaan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // wedt
@@ -206,88 +206,6 @@
             this.tmrDog.Interval = 10;
             this.tmrDog.Tick += new System.EventHandler(this.tmrDog_Tick);
             // 
-            // dier4
-            // 
-            this.dier4.Image = global::Disign_form.Properties.Resources.rendieren;
-            this.dier4.Location = new System.Drawing.Point(32, 267);
-            this.dier4.Margin = new System.Windows.Forms.Padding(4);
-            this.dier4.Name = "dier4";
-            this.dier4.Size = new System.Drawing.Size(116, 70);
-            this.dier4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.dier4.TabIndex = 4;
-            this.dier4.TabStop = false;
-            // 
-            // dier3
-            // 
-            this.dier3.Image = global::Disign_form.Properties.Resources.rendieren;
-            this.dier3.Location = new System.Drawing.Point(32, 175);
-            this.dier3.Margin = new System.Windows.Forms.Padding(4);
-            this.dier3.Name = "dier3";
-            this.dier3.Size = new System.Drawing.Size(116, 70);
-            this.dier3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.dier3.TabIndex = 3;
-            this.dier3.TabStop = false;
-            // 
-            // dier2
-            // 
-            this.dier2.Image = global::Disign_form.Properties.Resources.rendieren;
-            this.dier2.Location = new System.Drawing.Point(32, 97);
-            this.dier2.Margin = new System.Windows.Forms.Padding(4);
-            this.dier2.Name = "dier2";
-            this.dier2.Size = new System.Drawing.Size(116, 70);
-            this.dier2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.dier2.TabIndex = 2;
-            this.dier2.TabStop = false;
-            // 
-            // dier1
-            // 
-            this.dier1.Image = global::Disign_form.Properties.Resources.rendieren;
-            this.dier1.Location = new System.Drawing.Point(32, 0);
-            this.dier1.Margin = new System.Windows.Forms.Padding(4);
-            this.dier1.Name = "dier1";
-            this.dier1.Size = new System.Drawing.Size(116, 70);
-            this.dier1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.dier1.TabIndex = 1;
-            this.dier1.TabStop = false;
-            // 
-            // renBaan
-            // 
-            this.renBaan.BackColor = System.Drawing.Color.Transparent;
-            this.renBaan.Image = global::Disign_form.Properties.Resources.renbaan2;
-            this.renBaan.Location = new System.Drawing.Point(0, 0);
-            this.renBaan.Margin = new System.Windows.Forms.Padding(4);
-            this.renBaan.Name = "renBaan";
-            this.renBaan.Size = new System.Drawing.Size(1032, 346);
-            this.renBaan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.renBaan.TabIndex = 0;
-            this.renBaan.TabStop = false;
-            // 
-            // txtRendierNummer
-            // 
-            this.txtRendierNummer.BackColor = System.Drawing.Color.OliveDrab;
-            this.txtRendierNummer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRendierNummer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRendierNummer.Location = new System.Drawing.Point(0, 25);
-            this.txtRendierNummer.Margin = new System.Windows.Forms.Padding(4);
-            this.txtRendierNummer.Name = "txtRendierNummer";
-            this.txtRendierNummer.ReadOnly = true;
-            this.txtRendierNummer.Size = new System.Drawing.Size(16, 27);
-            this.txtRendierNummer.TabIndex = 19;
-            this.txtRendierNummer.Text = "1";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.OliveDrab;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(0, 116);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(16, 27);
-            this.textBox4.TabIndex = 20;
-            this.textBox4.Text = "2";
-            // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.OliveDrab;
@@ -399,47 +317,133 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(287, 27);
             this.textBox1.TabIndex = 30;
-            this.textBox1.Text = "Minimum inzet 5 Euro!";
+            this.textBox1.Text = "Minimum inzet 5 Euro";
             // 
             // lblfinish1
             // 
             this.lblfinish1.AutoSize = true;
-            this.lblfinish1.Location = new System.Drawing.Point(1040, 25);
+            this.lblfinish1.Location = new System.Drawing.Point(1040, 35);
             this.lblfinish1.Name = "lblfinish1";
-            this.lblfinish1.Size = new System.Drawing.Size(0, 17);
+            this.lblfinish1.Size = new System.Drawing.Size(40, 17);
             this.lblfinish1.TabIndex = 31;
+            this.lblfinish1.Text = "- - - -";
             // 
             // lblfinish2
             // 
             this.lblfinish2.AutoSize = true;
-            this.lblfinish2.Location = new System.Drawing.Point(1039, 116);
+            this.lblfinish2.Location = new System.Drawing.Point(1039, 126);
             this.lblfinish2.Name = "lblfinish2";
-            this.lblfinish2.Size = new System.Drawing.Size(0, 17);
+            this.lblfinish2.Size = new System.Drawing.Size(40, 17);
             this.lblfinish2.TabIndex = 32;
+            this.lblfinish2.Text = "- - - -";
             // 
             // lblfinish4
             // 
             this.lblfinish4.AutoSize = true;
-            this.lblfinish4.Location = new System.Drawing.Point(1039, 297);
+            this.lblfinish4.Location = new System.Drawing.Point(1040, 302);
             this.lblfinish4.Name = "lblfinish4";
-            this.lblfinish4.Size = new System.Drawing.Size(0, 17);
+            this.lblfinish4.Size = new System.Drawing.Size(40, 17);
             this.lblfinish4.TabIndex = 34;
+            this.lblfinish4.Text = "- - - -";
             // 
             // lblfinish3
             // 
             this.lblfinish3.AutoSize = true;
             this.lblfinish3.Location = new System.Drawing.Point(1040, 206);
             this.lblfinish3.Name = "lblfinish3";
-            this.lblfinish3.Size = new System.Drawing.Size(0, 17);
+            this.lblfinish3.Size = new System.Drawing.Size(40, 17);
             this.lblfinish3.TabIndex = 33;
+            this.lblfinish3.Text = "- - - -";
             // 
-            // Form1
+            // txtRendierNummer
+            // 
+            this.txtRendierNummer.BackColor = System.Drawing.Color.OliveDrab;
+            this.txtRendierNummer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRendierNummer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRendierNummer.Location = new System.Drawing.Point(0, 25);
+            this.txtRendierNummer.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRendierNummer.Name = "txtRendierNummer";
+            this.txtRendierNummer.ReadOnly = true;
+            this.txtRendierNummer.Size = new System.Drawing.Size(16, 27);
+            this.txtRendierNummer.TabIndex = 35;
+            this.txtRendierNummer.Text = "1";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.OliveDrab;
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(0, 116);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(16, 27);
+            this.textBox4.TabIndex = 36;
+            this.textBox4.Text = "2";
+            // 
+            // dier4
+            // 
+            this.dier4.Image = global::DeGokkers.Properties.Resources.reindeergifStatic;
+            this.dier4.Location = new System.Drawing.Point(32, 273);
+            this.dier4.Margin = new System.Windows.Forms.Padding(4);
+            this.dier4.Name = "dier4";
+            this.dier4.Size = new System.Drawing.Size(116, 70);
+            this.dier4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dier4.TabIndex = 4;
+            this.dier4.TabStop = false;
+            // 
+            // dier3
+            // 
+            this.dier3.Image = global::DeGokkers.Properties.Resources.reindeergifStatic;
+            this.dier3.Location = new System.Drawing.Point(32, 183);
+            this.dier3.Margin = new System.Windows.Forms.Padding(4);
+            this.dier3.Name = "dier3";
+            this.dier3.Size = new System.Drawing.Size(116, 70);
+            this.dier3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dier3.TabIndex = 3;
+            this.dier3.TabStop = false;
+            // 
+            // dier2
+            // 
+            this.dier2.Image = global::DeGokkers.Properties.Resources.reindeergifStatic;
+            this.dier2.Location = new System.Drawing.Point(32, 95);
+            this.dier2.Margin = new System.Windows.Forms.Padding(4);
+            this.dier2.Name = "dier2";
+            this.dier2.Size = new System.Drawing.Size(116, 70);
+            this.dier2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dier2.TabIndex = 2;
+            this.dier2.TabStop = false;
+            // 
+            // dier1
+            // 
+            this.dier1.Image = global::DeGokkers.Properties.Resources.reindeergifStatic;
+            this.dier1.Location = new System.Drawing.Point(32, 7);
+            this.dier1.Margin = new System.Windows.Forms.Padding(4);
+            this.dier1.Name = "dier1";
+            this.dier1.Size = new System.Drawing.Size(116, 70);
+            this.dier1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dier1.TabIndex = 1;
+            this.dier1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DeGokkers.Properties.Resources.renbaan2;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1032, 346);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 37;
+            this.pictureBox1.TabStop = false;
+            // 
+            // FormRenbaan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1111, 578);
+            this.ClientSize = new System.Drawing.Size(1100, 582);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtRendierNummer);
             this.Controls.Add(this.lblfinish4);
             this.Controls.Add(this.lblfinish3);
             this.Controls.Add(this.lblfinish2);
@@ -454,8 +458,6 @@
             this.Controls.Add(this.lblSietseCash);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.txtRendierNummer);
             this.Controls.Add(this.goButton);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.weddenschap2);
@@ -469,12 +471,12 @@
             this.Controls.Add(this.dier3);
             this.Controls.Add(this.dier2);
             this.Controls.Add(this.dier1);
-            this.Controls.Add(this.renBaan);
+            this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "FormRenbaan";
             this.Text = "Rendieren Race";
             ((System.ComponentModel.ISupportInitialize)(this.wedtEuro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hondNummer)).EndInit();
@@ -482,7 +484,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dier3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dier2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dier1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.renBaan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -490,8 +492,6 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox renBaan;
-        private System.Windows.Forms.PictureBox dier1;
         private System.Windows.Forms.PictureBox dier2;
         private System.Windows.Forms.PictureBox dier3;
         private System.Windows.Forms.PictureBox dier4;
@@ -505,8 +505,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button goButton;
         private System.Windows.Forms.Timer tmrDog;
-        private System.Windows.Forms.TextBox txtRendierNummer;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label lblSietseCash;
@@ -521,6 +519,10 @@
         private System.Windows.Forms.Label lblfinish2;
         private System.Windows.Forms.Label lblfinish4;
         private System.Windows.Forms.Label lblfinish3;
+        private System.Windows.Forms.TextBox txtRendierNummer;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.PictureBox dier1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

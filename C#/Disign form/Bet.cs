@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Disign_form
+namespace DeGokkers
 {
     public class Bet
     {

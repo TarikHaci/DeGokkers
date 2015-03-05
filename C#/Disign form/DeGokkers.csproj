@@ -7,7 +7,7 @@
     <ProjectGuid>{58893AF9-F5A4-42C7-B501-BBA226CF8F27}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Disign_form</RootNamespace>
+    <RootNamespace>DeGokkers</RootNamespace>
     <AssemblyName>Disign form</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -90,6 +90,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Rendiergif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reindeergif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reindeergifStatic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reindeergifStatic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reindeergif_transparant.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

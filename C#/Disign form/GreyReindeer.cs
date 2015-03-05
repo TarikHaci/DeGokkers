@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Disign_form
+namespace DeGokkers
 {
     public enum Position { first, second, third, fourth, none };
 
@@ -44,7 +44,8 @@ namespace Disign_form
             isFinish = false;
             position = Position.none;
             RefreshLabel();
-
+            MyPictureBox.Image = Properties.Resources.Reindeergif_transparant;
+            //MyPictureBox.BackColo;
         }
 
         public bool IsFinish()
@@ -57,6 +58,7 @@ namespace Disign_form
         }
         public void SetFinish()
         {
+            MyPictureBox.Image = Properties.Resources.reindeergifStatic;
             isFinish = true;
         }
         public Position GetPosition()
@@ -84,7 +86,7 @@ namespace Disign_form
                         lblFinish.Text = "Vierde";
                         break;
                 default:
-                        lblFinish.Text = "";
+                        lblFinish.Text = "- - - -";
                         break;
 
             }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disign form", "Disign form.csproj", "{58893AF9-F5A4-42C7-B501-BBA226CF8F27}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeGokkers", "DeGokkers.csproj", "{58893AF9-F5A4-42C7-B501-BBA226CF8F27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
