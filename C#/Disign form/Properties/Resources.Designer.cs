@@ -63,36 +63,6 @@ namespace DeGokkers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap reindeergif {
-            get {
-                object obj = ResourceManager.GetObject("reindeergif", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Reindeergif_transparant {
-            get {
-                object obj = ResourceManager.GetObject("Reindeergif_transparant", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap reindeergifStatic {
-            get {
-                object obj = ResourceManager.GetObject("reindeergifStatic", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap renbaan2 {
             get {
                 object obj = ResourceManager.GetObject("renbaan2", resourceCulture);
@@ -103,9 +73,9 @@ namespace DeGokkers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rendier_bewegende_animatie_0038 {
+        internal static System.Drawing.Bitmap renbaan3 {
             get {
-                object obj = ResourceManager.GetObject("rendier-bewegende-animatie-0038", resourceCulture);
+                object obj = ResourceManager.GetObject("renbaan3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +83,9 @@ namespace DeGokkers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rendieren {
+        internal static System.Drawing.Bitmap rendeergif2 {
             get {
-                object obj = ResourceManager.GetObject("rendieren", resourceCulture);
+                object obj = ResourceManager.GetObject("rendeergif2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +93,9 @@ namespace DeGokkers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rendiergif {
+        internal static System.Drawing.Bitmap rendeergif2static {
             get {
-                object obj = ResourceManager.GetObject("Rendiergif", resourceCulture);
+                object obj = ResourceManager.GetObject("rendeergif2static", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

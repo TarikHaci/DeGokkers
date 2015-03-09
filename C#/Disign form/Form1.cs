@@ -18,6 +18,7 @@ namespace DeGokkers
         public FormRenbaan()
         {
             InitializeComponent();
+            PictureTransparator();
             InitDogs();
             InitGuys();
             dogFinished = 0;
@@ -148,5 +149,20 @@ namespace DeGokkers
                 lblNamePlayer.Text = deelnemer3.Text;
             }
         }
+
+            private void PictureTransparator()
+            {
+                //van stackoverflow
+                //de locatie eruit gehaald
+                Renbaan.Controls.Add(dier1);
+                Renbaan.Controls.Add(dier2);
+                Renbaan.Controls.Add(dier3);
+                Renbaan.Controls.Add(dier4);
+                dier1.BackColor = Color.Transparent;
+                dier2.BackColor = Color.Transparent;
+                dier3.BackColor = Color.Transparent;
+                dier4.BackColor = Color.Transparent;
+            }
+        
     }
 }

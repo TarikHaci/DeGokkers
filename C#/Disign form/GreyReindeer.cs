@@ -44,8 +44,7 @@ namespace DeGokkers
             isFinish = false;
             position = Position.none;
             RefreshLabel();
-            MyPictureBox.Image = Properties.Resources.Reindeergif_transparant;
-            //MyPictureBox.BackColo;
+            MyPictureBox.Image = Properties.Resources.rendeergif2;
         }
 
         public bool IsFinish()
@@ -58,7 +57,7 @@ namespace DeGokkers
         }
         public void SetFinish()
         {
-            MyPictureBox.Image = Properties.Resources.reindeergifStatic;
+            MyPictureBox.Image = Properties.Resources.rendeergif2static;
             isFinish = true;
         }
         public Position GetPosition()
