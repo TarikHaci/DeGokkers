@@ -35,8 +35,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.hondNummer = new System.Windows.Forms.NumericUpDown();
             this.Weddenschap1 = new System.Windows.Forms.TextBox();
-            this.weddenschap3 = new System.Windows.Forms.TextBox();
-            this.weddenschap2 = new System.Windows.Forms.TextBox();
+            this.Weddenschap3 = new System.Windows.Forms.TextBox();
+            this.Weddenschap2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.goButton = new System.Windows.Forms.Button();
             this.tmrDog = new System.Windows.Forms.Timer(this.components);
@@ -150,27 +150,27 @@
             this.Weddenschap1.TabIndex = 13;
             this.Weddenschap1.Text = "Sieste heeft nog geen weddenscap geplaatst";
             // 
-            // weddenschap3
+            // Weddenschap3
             // 
-            this.weddenschap3.BackColor = System.Drawing.SystemColors.Control;
-            this.weddenschap3.Location = new System.Drawing.Point(487, 505);
-            this.weddenschap3.Margin = new System.Windows.Forms.Padding(4);
-            this.weddenschap3.Name = "weddenschap3";
-            this.weddenschap3.ReadOnly = true;
-            this.weddenschap3.Size = new System.Drawing.Size(545, 22);
-            this.weddenschap3.TabIndex = 14;
-            this.weddenschap3.Text = "Fer heeft nog geen weddenscap geplaatst";
+            this.Weddenschap3.BackColor = System.Drawing.SystemColors.Control;
+            this.Weddenschap3.Location = new System.Drawing.Point(487, 505);
+            this.Weddenschap3.Margin = new System.Windows.Forms.Padding(4);
+            this.Weddenschap3.Name = "Weddenschap3";
+            this.Weddenschap3.ReadOnly = true;
+            this.Weddenschap3.Size = new System.Drawing.Size(545, 22);
+            this.Weddenschap3.TabIndex = 14;
+            this.Weddenschap3.Text = "Fer heeft nog geen weddenscap geplaatst";
             // 
-            // weddenschap2
+            // Weddenschap2
             // 
-            this.weddenschap2.BackColor = System.Drawing.SystemColors.Control;
-            this.weddenschap2.Location = new System.Drawing.Point(487, 476);
-            this.weddenschap2.Margin = new System.Windows.Forms.Padding(4);
-            this.weddenschap2.Name = "weddenschap2";
-            this.weddenschap2.ReadOnly = true;
-            this.weddenschap2.Size = new System.Drawing.Size(545, 22);
-            this.weddenschap2.TabIndex = 15;
-            this.weddenschap2.Text = "Lidy heeft nog geen weddenscap geplaatst";
+            this.Weddenschap2.BackColor = System.Drawing.SystemColors.Control;
+            this.Weddenschap2.Location = new System.Drawing.Point(487, 476);
+            this.Weddenschap2.Margin = new System.Windows.Forms.Padding(4);
+            this.Weddenschap2.Name = "Weddenschap2";
+            this.Weddenschap2.ReadOnly = true;
+            this.Weddenschap2.Size = new System.Drawing.Size(545, 22);
+            this.Weddenschap2.TabIndex = 15;
+            this.Weddenschap2.Text = "Lidy heeft nog geen weddenscap geplaatst";
             // 
             // textBox3
             // 
@@ -409,8 +409,8 @@
             this.Controls.Add(this.lblSietseCash);
             this.Controls.Add(this.goButton);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.weddenschap2);
-            this.Controls.Add(this.weddenschap3);
+            this.Controls.Add(this.Weddenschap2);
+            this.Controls.Add(this.Weddenschap3);
             this.Controls.Add(this.Weddenschap1);
             this.Controls.Add(this.hondNummer);
             this.Controls.Add(this.textBox2);
@@ -442,8 +442,8 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.NumericUpDown hondNummer;
         private System.Windows.Forms.TextBox Weddenschap1;
-        private System.Windows.Forms.TextBox weddenschap3;
-        private System.Windows.Forms.TextBox weddenschap2;
+        private System.Windows.Forms.TextBox Weddenschap3;
+        private System.Windows.Forms.TextBox Weddenschap2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button goButton;
         private System.Windows.Forms.Timer tmrDog;

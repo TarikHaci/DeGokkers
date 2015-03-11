@@ -13,8 +13,10 @@ namespace DeGokkers
     {
         Random rand = new Random();
         GreyReindeer[] ReindeerArray = new GreyReindeer[4];
+        Bet bet = new Bet();
         Guy[] guyArray = new Guy[3];
         int dogFinished;
+        string name;
         public FormRenbaan()
         {
             InitializeComponent();
@@ -26,29 +28,13 @@ namespace DeGokkers
 
         private void wedt_Click(object sender, EventArgs e)
         {
-            if (wedtEuro.Value >= 5 && hondNummer.Value > 0 && deelnemer1.Checked)
+            Guy bettor = getTheBettor();
+            GreyReindeer ReindeerChoice = getTheReindeer();
+
+
+            if (bettor.GetCash() >= wedtEuro.Value)
             {
-                Weddenschap1.Text = ("Sietse wedt " + wedtEuro.Value + " Euro op rendier nummer " + hondNummer.Value);
-            }
-            else if (wedtEuro.Value >= 5 && hondNummer.Value > 0 && deelnemer2.Checked)
-            {
-                weddenschap2.Text = ("Lidy wedt " + wedtEuro.Value + " Euro op rendier nummer " + hondNummer.Value);
-            }
-            else if (wedtEuro.Value >= 5 && hondNummer.Value > 0 && deelnemer3.Checked)
-            {
-                weddenschap3.Text = ("Fer wedt " + wedtEuro.Value + " Euro op rendier nummer " + hondNummer.Value);
-            }
-            else if (wedtEuro.Value < 5)
-            {
-                MessageBox.Show("Minimaal vanaf 5 euro!");
-            }
-            else if (hondNummer.Value <= 0)
-            {
-                MessageBox.Show("Kies een rendier nummer!");
-            }
-            else
-            {
-                MessageBox.Show("Kies een deelnemer!");
+                bettor.myTextBox.Text = bettor.GetName() + " wedt " + wedtEuro.Value + " op rendiernumer " + ReindeerChoice.GetName();
             }
         }
 
@@ -92,16 +78,16 @@ namespace DeGokkers
         }
         public void InitDogs()
         {
-            ReindeerArray[0] = new GreyReindeer(dier1, lblfinish1);
-            ReindeerArray[1] = new GreyReindeer(dier2, lblfinish2);
-            ReindeerArray[2] = new GreyReindeer(dier3, lblfinish3);
-            ReindeerArray[3] = new GreyReindeer(dier4, lblfinish4);
+            ReindeerArray[0] = new GreyReindeer(dier1, lblfinish1, "1");
+            ReindeerArray[1] = new GreyReindeer(dier2, lblfinish2, "2");
+            ReindeerArray[2] = new GreyReindeer(dier3, lblfinish3, "3");
+            ReindeerArray[3] = new GreyReindeer(dier4, lblfinish4, "4");
         }
         public void InitGuys()
         {
-            guyArray[0] = new Guy(50, "Sietse", lblSietseCash);
-            guyArray[1] = new Guy(75, "Lidy", lblLidyCash);
-            guyArray[2] = new Guy(45, "Fer", lblFerCash);
+            guyArray[0] = new Guy(50, "Sietse", lblSietseCash, deelnemer1, Weddenschap1);
+            guyArray[1] = new Guy(75, "Lidy", lblLidyCash, deelnemer2, Weddenschap2);
+            guyArray[2] = new Guy(45, "Fer", lblFerCash, deelnemer3, Weddenschap3);
         }
         public bool CheckFinish()
         {
@@ -149,20 +135,49 @@ namespace DeGokkers
                 lblNamePlayer.Text = deelnemer3.Text;
             }
         }
-
-            private void PictureTransparator()
+        private void PictureTransparator()
+        {
+            //van stackoverflow
+            Renbaan.Controls.Add(dier1);
+            Renbaan.Controls.Add(dier2);
+            Renbaan.Controls.Add(dier3);
+            Renbaan.Controls.Add(dier4);
+            dier1.BackColor = Color.Transparent;
+            dier2.BackColor = Color.Transparent;
+            dier3.BackColor = Color.Transparent;
+            dier4.BackColor = Color.Transparent;
+        }
+        public Guy getTheBettor()
+        {
+            for (int i = 0; i < 3; i++)
             {
-                //van stackoverflow
-                //de locatie eruit gehaald
-                Renbaan.Controls.Add(dier1);
-                Renbaan.Controls.Add(dier2);
-                Renbaan.Controls.Add(dier3);
-                Renbaan.Controls.Add(dier4);
-                dier1.BackColor = Color.Transparent;
-                dier2.BackColor = Color.Transparent;
-                dier3.BackColor = Color.Transparent;
-                dier4.BackColor = Color.Transparent;
+                if (guyArray[i].myRadioButton.Checked)
+                {
+                    return guyArray[i];
+                }
             }
-        
+            return null;
+        }
+        public GreyReindeer getTheReindeer()
+        {
+            switch ((int)hondNummer.Value)
+            {
+                case 1:
+                    return ReindeerArray[0];
+                    break;
+                case 2:
+                    return ReindeerArray[1];
+                    break;
+                case 3:
+                    return ReindeerArray[2];
+                    break;
+                case 4:
+                    return ReindeerArray[3];
+                    break;
+                default:
+                    break;
+            }
+            return null;
+        }
     }
 }

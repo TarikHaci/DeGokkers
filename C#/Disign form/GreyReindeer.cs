@@ -18,10 +18,12 @@ namespace DeGokkers
         private bool isFinish;
         private Position position;
         private Label lblFinish;
+        private string name;
         //CONSTRUCTOR
-        public GreyReindeer(PictureBox mypicturebox, Label lblFinish)
+        public GreyReindeer(PictureBox mypicturebox, Label lblFinish, string name)
         {
             this.MyPictureBox = mypicturebox;
+            this.name = name;
             isFinish = false;
             position = Position.none;
             this.lblFinish = lblFinish;
@@ -54,6 +56,10 @@ namespace DeGokkers
         public int GetLeftPosition()
         {
             return MyPictureBox.Left;
+        }
+        public string GetName()
+        {
+            return name;
         }
         public void SetFinish()
         {
