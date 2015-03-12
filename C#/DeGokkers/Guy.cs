@@ -9,7 +9,7 @@ namespace DeGokkers
     public class Guy
     {
         //FIELDS
-        private string Name;
+        public string Name { get; private set;}
         public Bet MyBet;
         public Label MyLabel;
         public int Cash;
@@ -53,12 +53,17 @@ namespace DeGokkers
         public bool PlaceBet(int amount, int dog)
         {
             UpdateLabels();
-            return true;
+            //Plaats een nieuwe weddenschap en sla het op in de variabele MyBet. 
+    //Retourneer een true als de gokker genoeg geld heeft om te wedden.  
+           //Onderstaande regel staat er tijdelijk om foutmeldingen te voorkomen.  
+//Denk eraan dat weddenschappen gerepresenteerd worden door instanties van Bet. 
+           //Haal deze regel later weg. 
+           return true;
         }
 
         public void ClearBet()
         {
-            // Maakt de weddenschapsveld leeg.
+            myTextBox.Text = Name + " heeft nog geen weddenscap geplaatst";
         }
 
         public void Collect(int Winner)
@@ -67,10 +72,6 @@ namespace DeGokkers
             // Betaalt mijn weddenschap uit.
             // Maakt mijn weddenschapsveld leeg.
             // Werkt mijn labels bij.
-        }
-        public string GetName()
-        {
-            return Name;
         }
     }
 }

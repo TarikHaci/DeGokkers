@@ -12,11 +12,10 @@ namespace DeGokkers
     public partial class FormRenbaan : Form
     {
         Random rand = new Random();
-        GreyReindeer[] ReindeerArray = new GreyReindeer[4];
+        Reindeer[] ReindeerArray = new Reindeer[4];
         Bet bet = new Bet();
         Guy[] guyArray = new Guy[3];
         int dogFinished;
-        string name;
         public FormRenbaan()
         {
             InitializeComponent();
@@ -29,12 +28,12 @@ namespace DeGokkers
         private void wedt_Click(object sender, EventArgs e)
         {
             Guy bettor = getTheBettor();
-            GreyReindeer ReindeerChoice = getTheReindeer();
+            Reindeer ReindeerChoice = getTheReindeer();
 
 
             if (bettor.GetCash() >= wedtEuro.Value)
             {
-                bettor.myTextBox.Text = bettor.GetName() + " wedt " + wedtEuro.Value + " op rendiernumer " + ReindeerChoice.GetName();
+                bettor.myTextBox.Text = bettor.Name + " wedt " + wedtEuro.Value + " Euro op rendiernummer " + ReindeerChoice.GetName() + " .";
             }
         }
 
@@ -63,6 +62,7 @@ namespace DeGokkers
                 tmrDog.Enabled = false;
                 MessageBox.Show("Alle rendieren zijn gefinisht!");
                 goButton.Enabled = true;
+                wedtButton.Enabled = true;
                 dogFinished = 0;
             }
         }
@@ -70,6 +70,7 @@ namespace DeGokkers
         private void goButton_Click(object sender, EventArgs e)
         {
             goButton.Enabled = false;
+            wedtButton.Enabled = false;
             tmrDog.Enabled = true;
             for (int i = 0; i < ReindeerArray.Length; i++)
             {
@@ -78,10 +79,10 @@ namespace DeGokkers
         }
         public void InitDogs()
         {
-            ReindeerArray[0] = new GreyReindeer(dier1, lblfinish1, "1");
-            ReindeerArray[1] = new GreyReindeer(dier2, lblfinish2, "2");
-            ReindeerArray[2] = new GreyReindeer(dier3, lblfinish3, "3");
-            ReindeerArray[3] = new GreyReindeer(dier4, lblfinish4, "4");
+            ReindeerArray[0] = new Reindeer(dier1, lblfinish1, "1");
+            ReindeerArray[1] = new Reindeer(dier2, lblfinish2, "2");
+            ReindeerArray[2] = new Reindeer(dier3, lblfinish3, "3");
+            ReindeerArray[3] = new Reindeer(dier4, lblfinish4, "4");
         }
         public void InitGuys()
         {
@@ -99,7 +100,7 @@ namespace DeGokkers
             
             return true;
         }
-        public void SetPosition(GreyReindeer dog)
+        public void SetPosition(Reindeer dog)
         {
             switch (dogFinished)
             {
@@ -158,22 +159,18 @@ namespace DeGokkers
             }
             return null;
         }
-        public GreyReindeer getTheReindeer()
+        public Reindeer getTheReindeer()
         {
             switch ((int)hondNummer.Value)
             {
                 case 1:
                     return ReindeerArray[0];
-                    break;
                 case 2:
                     return ReindeerArray[1];
-                    break;
                 case 3:
                     return ReindeerArray[2];
-                    break;
                 case 4:
                     return ReindeerArray[3];
-                    break;
                 default:
                     break;
             }

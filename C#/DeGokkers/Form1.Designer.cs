@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRenbaan));
-            this.wedt = new System.Windows.Forms.Button();
+            this.wedtButton = new System.Windows.Forms.Button();
             this.wedtEuro = new System.Windows.Forms.NumericUpDown();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.hondNummer = new System.Windows.Forms.NumericUpDown();
@@ -66,17 +66,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.Renbaan)).BeginInit();
             this.SuspendLayout();
             // 
-            // wedt
+            // wedtButton
             // 
-            this.wedt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wedt.Location = new System.Drawing.Point(84, 533);
-            this.wedt.Margin = new System.Windows.Forms.Padding(4);
-            this.wedt.Name = "wedt";
-            this.wedt.Size = new System.Drawing.Size(100, 28);
-            this.wedt.TabIndex = 9;
-            this.wedt.Text = "wedt";
-            this.wedt.UseVisualStyleBackColor = true;
-            this.wedt.Click += new System.EventHandler(this.wedt_Click);
+            this.wedtButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wedtButton.Location = new System.Drawing.Point(84, 533);
+            this.wedtButton.Margin = new System.Windows.Forms.Padding(4);
+            this.wedtButton.Name = "wedtButton";
+            this.wedtButton.Size = new System.Drawing.Size(100, 28);
+            this.wedtButton.TabIndex = 9;
+            this.wedtButton.Text = "wedt";
+            this.wedtButton.UseVisualStyleBackColor = true;
+            this.wedtButton.Click += new System.EventHandler(this.wedt_Click);
             // 
             // wedtEuro
             // 
@@ -113,7 +113,7 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(203, 19);
             this.textBox2.TabIndex = 11;
-            this.textBox2.Text = "euro op rendier nummer:";
+            this.textBox2.Text = "Euro op rendier nummer:";
             // 
             // hondNummer
             // 
@@ -207,27 +207,27 @@
             this.lblSietseCash.AutoSize = true;
             this.lblSietseCash.Location = new System.Drawing.Point(88, 450);
             this.lblSietseCash.Name = "lblSietseCash";
-            this.lblSietseCash.Size = new System.Drawing.Size(16, 17);
+            this.lblSietseCash.Size = new System.Drawing.Size(24, 17);
             this.lblSietseCash.TabIndex = 23;
-            this.lblSietseCash.Text = "€";
+            this.lblSietseCash.Text = "50";
             // 
             // lblLidyCash
             // 
             this.lblLidyCash.AutoSize = true;
             this.lblLidyCash.Location = new System.Drawing.Point(88, 476);
             this.lblLidyCash.Name = "lblLidyCash";
-            this.lblLidyCash.Size = new System.Drawing.Size(16, 17);
+            this.lblLidyCash.Size = new System.Drawing.Size(24, 17);
             this.lblLidyCash.TabIndex = 24;
-            this.lblLidyCash.Text = "€";
+            this.lblLidyCash.Text = "75";
             // 
             // lblFerCash
             // 
             this.lblFerCash.AutoSize = true;
             this.lblFerCash.Location = new System.Drawing.Point(88, 505);
             this.lblFerCash.Name = "lblFerCash";
-            this.lblFerCash.Size = new System.Drawing.Size(16, 17);
+            this.lblFerCash.Size = new System.Drawing.Size(24, 17);
             this.lblFerCash.TabIndex = 25;
-            this.lblFerCash.Text = "€";
+            this.lblFerCash.Text = "40";
             // 
             // lblNamePlayer
             // 
@@ -415,7 +415,7 @@
             this.Controls.Add(this.hondNummer);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.wedtEuro);
-            this.Controls.Add(this.wedt);
+            this.Controls.Add(this.wedtButton);
             this.Controls.Add(this.Renbaan);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -437,7 +437,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button wedt;
+        private System.Windows.Forms.Button wedtButton;
         private System.Windows.Forms.NumericUpDown wedtEuro;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.NumericUpDown hondNummer;

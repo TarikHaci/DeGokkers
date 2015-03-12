@@ -9,7 +9,7 @@ namespace DeGokkers
     public enum Position { first, second, third, fourth, none };
 
 
-    public class GreyReindeer
+    public class Reindeer
     {
         //PROPERTIES
         public int RaceTrackLegth; // De lengte van de renbaan
@@ -20,7 +20,7 @@ namespace DeGokkers
         private Label lblFinish;
         private string name;
         //CONSTRUCTOR
-        public GreyReindeer(PictureBox mypicturebox, Label lblFinish, string name)
+        public Reindeer(PictureBox mypicturebox, Label lblFinish, string name)
         {
             this.MyPictureBox = mypicturebox;
             this.name = name;
@@ -80,6 +80,7 @@ namespace DeGokkers
             {
                 case Position.first :
                     lblFinish.Text = "Eerste";
+
                         break;
                 case Position.second :
                         lblFinish.Text = "Tweede";

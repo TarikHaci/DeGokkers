@@ -5,3 +5,11 @@ C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\DeGokkers.Pro
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\DeGokkers.csproj.GenerateResource.Cache
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign form.exe
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\Disign form\obj\Debug\Disign form.pdb
+C:\Users\Tarik\Desktop\DeGokkers\obj\Debug\Disign form.exe
+C:\Users\Tarik\Desktop\DeGokkers\obj\Debug\Disign form.pdb
+C:\Users\Tarik\Desktop\DeGokkers\bin\Debug\Disign form.exe
+C:\Users\Tarik\Desktop\DeGokkers\bin\Debug\Disign form.pdb
+C:\Users\Tarik\Desktop\DeGokkers\obj\Debug\DeGokkers.csprojResolveAssemblyReference.cache
+C:\Users\Tarik\Desktop\DeGokkers\obj\Debug\DeGokkers.FormRenbaan.resources
+C:\Users\Tarik\Desktop\DeGokkers\obj\Debug\DeGokkers.Properties.Resources.resources
+C:\Users\Tarik\Desktop\DeGokkers\obj\Debug\DeGokkers.csproj.GenerateResource.Cache
