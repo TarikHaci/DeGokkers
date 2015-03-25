@@ -12,14 +12,24 @@ namespace DeGokkers
         public string Name { get; private set;}
         public Bet MyBet;
         public Label MyLabel;
-        public int Cash;
+        public int _Cash;
+        public int Cash
+        {
+            get { return _Cash; }
+            set
+            {
+                _Cash = value;
+                MyLabel.Text = value + "€";
+            }
+        }
         public RadioButton myRadioButton;
         public TextBox myTextBox;
+        public bool HaveBet;
 
         //CONSTRUCTOR
         public Guy(int Cash, string Name, Label MyLabel, RadioButton myRadioButton, TextBox myTextBox)
         {
-
+            HaveBet = false;
             this.Name = Name;
             this.MyLabel = MyLabel;
             this.Cash = Cash;
@@ -27,13 +37,12 @@ namespace DeGokkers
             this.myTextBox = myTextBox;
             UpdateLabels();
         }
-
-
-
+        
         public int GetCash()
         {
             return Cash;
         }
+        
         public void SetCash(int cash)
         {
             Cash = cash;
@@ -47,18 +56,23 @@ namespace DeGokkers
 
         public void UpdateLabels()
         {
-            MyLabel.Text = Cash.ToString();
+            //MyLabel.Text = Cash.ToString();
         }
 
-        public bool PlaceBet(int amount, int dog)
+        public bool PlaceBet(int amount, Reindeer Dog)
         {
             UpdateLabels();
-            //Plaats een nieuwe weddenschap en sla het op in de variabele MyBet. 
-    //Retourneer een true als de gokker genoeg geld heeft om te wedden.  
-           //Onderstaande regel staat er tijdelijk om foutmeldingen te voorkomen.  
-//Denk eraan dat weddenschappen gerepresenteerd worden door instanties van Bet. 
-           //Haal deze regel later weg. 
-           return true;
+            
+            if (amount <= Cash)
+            {
+                MyBet = new Bet(amount, Dog, this);
+                HaveBet = true;
+                Cash -= amount;
+                myRadioButton.Enabled = false;
+                return true;
+            }
+
+           return false;
         }
 
         public void ClearBet()

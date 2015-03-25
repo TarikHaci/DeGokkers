@@ -13,27 +13,25 @@ namespace DeGokkers
     {
         Random rand = new Random();
         Reindeer[] ReindeerArray = new Reindeer[4];
-        Bet bet = new Bet();
         Guy[] guyArray = new Guy[3];
-        int dogFinished;
+        int dogFinished = 0;
         public FormRenbaan()
         {
             InitializeComponent();
             PictureTransparator();
             InitDogs();
             InitGuys();
-            dogFinished = 0;
         }
 
         private void wedt_Click(object sender, EventArgs e)
         {
             Guy bettor = getTheBettor();
             Reindeer ReindeerChoice = getTheReindeer();
+            int amount = (int)wedtEuro.Value;
 
-
-            if (bettor.GetCash() >= wedtEuro.Value)
+            if (bettor.PlaceBet(amount, ReindeerChoice))
             {
-                bettor.myTextBox.Text = bettor.Name + " wedt " + wedtEuro.Value + " Euro op rendiernummer " + ReindeerChoice.GetName() + " .";
+                bettor.myTextBox.Text = bettor.MyBet.GetDescription();
             }
         }
 
@@ -59,12 +57,35 @@ namespace DeGokkers
             }
             else
             {
+                //END OF THE RACE
+                string endMessage = "Finish ! \n";
+
+                for (int i = 0; i < guyArray.Length; i++)
+                {
+                    //check voor elke mensen als hij heeft gewedt of niet
+                    if (guyArray[i].HaveBet)
+                    {
+                        if (guyArray[i].MyBet.Dog.GetPosition() == Position.first)
+                        {
+                            guyArray[i].MyBet.PayOut();
+                            endMessage += guyArray[i].Name + "Have win !\n";
+                            
+                        }
+                        else
+                        {
+                            endMessage += guyArray[i].Name + "Have Lost !\n";
+                        }
+                        guyArray[i].myRadioButton.Enabled = true;
+                    }
+                }
                 tmrDog.Enabled = false;
-                MessageBox.Show("Alle rendieren zijn gefinisht!");
+                //MessageBox.Show("Alle rendieren zijn gefinisht!");
                 goButton.Enabled = true;
                 wedtButton.Enabled = true;
                 dogFinished = 0;
+                MessageBox.Show(endMessage);
             }
+            
         }
 
         private void goButton_Click(object sender, EventArgs e)

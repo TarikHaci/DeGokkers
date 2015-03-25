@@ -80,7 +80,6 @@ namespace DeGokkers
             {
                 case Position.first :
                     lblFinish.Text = "Eerste";
-
                         break;
                 case Position.second :
                         lblFinish.Text = "Tweede";
