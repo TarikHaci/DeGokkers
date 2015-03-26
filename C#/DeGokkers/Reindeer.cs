@@ -7,96 +7,102 @@ using System.Windows.Forms;
 namespace DeGokkers
 {
     public enum Position { first, second, third, fourth, none };
-
-
     public class Reindeer
     {
-        //PROPERTIES
-        public int RaceTrackLegth; // De lengte van de renbaan
-        public PictureBox MyPictureBox = null;
-        public Random Randomizer; //Een instantie van Random (= Willekeurig)
+        #region Properties
+        public int raceTrackLegth; // De lengte van de renbaan
+        public PictureBox myPictureBox = null;
+        public Random randomizer; //Een instantie van Random (= Willekeurig)
         private bool isFinish;
         private Position position;
         private Label lblFinish;
         private string name;
-        //CONSTRUCTOR
-        public Reindeer(PictureBox mypicturebox, Label lblFinish, string name)
+        #endregion 
+
+        #region Constructor
+        public Reindeer(PictureBox myPictureBox, Label lblFinish, string name)
         {
-            this.MyPictureBox = mypicturebox;
+            this.myPictureBox = myPictureBox;
             this.name = name;
             isFinish = false;
             position = Position.none;
             this.lblFinish = lblFinish;
         }
+        #endregion
 
-        //METHODS
+        #region Methods
         public void Run(Random random)
         {
-
-            if (MyPictureBox.Left <= 685)
+            if (myPictureBox.Left <= 685)
             {
-                MyPictureBox.Left += random.Next(1, 4);
+                myPictureBox.Left += random.Next(1, 4);
             }
-
-
         }
+
         public void TakeStartingPosition()
         {
-            MyPictureBox.Left = 0;
+            myPictureBox.Left = 0;
             isFinish = false;
             position = Position.none;
             RefreshLabel();
-            MyPictureBox.Image = Properties.Resources.rendeergif2;
+            myPictureBox.Image = Properties.Resources.rendeergif2;
         }
 
-        public bool IsFinish()
-        {
-            return isFinish;
-        }
-        public int GetLeftPosition()
-        {
-            return MyPictureBox.Left;
-        }
-        public string GetName()
-        {
-            return name;
-        }
-        public void SetFinish()
-        {
-            MyPictureBox.Image = Properties.Resources.rendeergif2static;
-            MyPictureBox.Left = 0;
-            isFinish = true;
-        }
-        public Position GetPosition()
-        {
-            return position;
-        }
-        public void SetPosition(Position p)
-        {
-            position = p;
-        }
         public void RefreshLabel()
         {
             switch (position)
             {
-                case Position.first :
+                case Position.first:
                     lblFinish.Text = "Eerste";
-                        break;
-                case Position.second :
-                        lblFinish.Text = "Tweede";
-                        break;
-                case Position.third :
-                        lblFinish.Text = "Derde";
-                        break;
-                case Position.fourth :
-                        lblFinish.Text = "Vierde";
-                        break;
+                    break;
+                case Position.second:
+                    lblFinish.Text = "Tweede";
+                    break;
+                case Position.third:
+                    lblFinish.Text = "Derde";
+                    break;
+                case Position.fourth:
+                    lblFinish.Text = "Vierde";
+                    break;
                 default:
-                        lblFinish.Text = "- - - -";
-                        break;
-
+                    lblFinish.Text = "- - - -";
+                    break;
             }
         }
+        #endregion
 
+        #region Getter/Setter
+        public bool IsFinish()
+        {
+            return isFinish;
+        }
+
+        public int GetLeftPosition()
+        {
+            return myPictureBox.Left;
+        }
+
+        public string GetName()
+        {
+            return name;
+        }
+
+        public void SetFinish()
+        {
+            myPictureBox.Image = Properties.Resources.rendeergif2static;
+            myPictureBox.Left = 0;
+            isFinish = true;
+        }
+
+        public Position GetPosition()
+        {
+            return position;
+        }
+
+        public void SetPosition(Position p)
+        {
+            position = p;
+        }
+        #endregion
     }
 }

@@ -8,86 +8,60 @@ namespace DeGokkers
 {
     public class Guy
     {
-        //FIELDS
-        public string Name { get; private set;}
-        public Bet MyBet;
-        public Label MyLabel;
-        public int _Cash;
-        public int Cash
-        {
-            get { return _Cash; }
-            set
-            {
-                _Cash = value;
-                MyLabel.Text = value + "€";
-            }
-        }
+        #region Properties
+        public string name { get; private set; }
+        public Bet myBet;
+        public Label myLabel;
+        public int cash;
         public RadioButton myRadioButton;
         public TextBox myTextBox;
-        public bool HaveBet;
+        public bool haveBet;
+        #endregion
 
-        //CONSTRUCTOR
-        public Guy(int Cash, string Name, Label MyLabel, RadioButton myRadioButton, TextBox myTextBox)
+        #region Constructor
+        public Guy(int cash, string name, Label myLabel, RadioButton myRadioButton, TextBox myTextBox)
         {
-            HaveBet = false;
-            this.Name = Name;
-            this.MyLabel = MyLabel;
-            this.Cash = Cash;
+            haveBet = false;
+            this.name = name;
+            this.myLabel = myLabel;
+            this.cash = cash;
             this.myRadioButton = myRadioButton;
             this.myTextBox = myTextBox;
-            UpdateLabels();
         }
-        
-        public int GetCash()
-        {
-            return Cash;
-        }
-        
-        public void SetCash(int cash)
-        {
-            Cash = cash;
-            if (MyLabel != null)
-                MyLabel.Text = Cash.ToString();
-        }
+        #endregion
 
-        
-
-
-
-        public void UpdateLabels()
-        {
-            //MyLabel.Text = Cash.ToString();
-        }
-
+        #region Methods
         public bool PlaceBet(int amount, Reindeer Reindeer)
         {
-            UpdateLabels();
-            
             if (amount <= Cash)
             {
-                MyBet = new Bet(amount, Reindeer, this);
-                HaveBet = true;
+                myBet = new Bet(amount, Reindeer, this);
+                haveBet = true;
                 Cash -= amount;
                 myRadioButton.Enabled = false;
                 myRadioButton.Checked = false;
                 return true;
             }
-
            return false;
         }
 
         public void ClearBet()
         {
-            myTextBox.Text = Name + " heeft nog geen weddenscap geplaatst";
-            HaveBet = false;
+            myTextBox.Text = name + " heeft nog geen weddenscap geplaatst";
+            haveBet = false;
         }
+        #endregion
 
-        public void Collect(int Winner)
+        #region Getter/Setters
+        public int Cash
         {
-            UpdateLabels();
-            // Betaalt mijn weddenschap uit.
-            // Maakt mijn weddenschapsveld leeg.
-            // Werkt mijn labels bij.
+            get { return cash; }
+            set
+            {
+                cash = value;
+                myLabel.Text = "€" + value;
+            }
         }
+        #endregion
     }
 }

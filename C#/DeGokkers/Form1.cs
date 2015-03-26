@@ -15,6 +15,7 @@ namespace DeGokkers
         Reindeer[] ReindeerArray = new Reindeer[4];
         Guy[] guyArray = new Guy[3];
         int reindeerFinished = 0;
+
         public FormRenbaan()
         {
             InitializeComponent();
@@ -31,7 +32,7 @@ namespace DeGokkers
 
             if (bettor != null && bettor.PlaceBet(amount, ReindeerChoice))
             {
-                bettor.myTextBox.Text = bettor.MyBet.GetDescription();
+                bettor.myTextBox.Text = bettor.myBet.GetDescription();
             }
         }
 
@@ -47,7 +48,6 @@ namespace DeGokkers
                     }
                     if (ReindeerArray[i].GetLeftPosition() >= 685 && !ReindeerArray[i].IsFinish())
                     {
-                        
                         SetPosition(ReindeerArray[i]);
                         ReindeerArray[i].RefreshLabel();
                         ReindeerArray[i].SetFinish();
@@ -63,17 +63,16 @@ namespace DeGokkers
                 for (int i = 0; i < guyArray.Length; i++)
                 {
                     //check voor elke mensen als hij heeft gewedt of niet
-                    if (guyArray[i].HaveBet)
+                    if (guyArray[i].haveBet)
                     {
-                        if (guyArray[i].MyBet.Reindeer.GetPosition() == Position.first)
+                        if (guyArray[i].myBet.reindeer.GetPosition() == Position.first)
                         {
-                            guyArray[i].MyBet.PayOut();
-                            endMessage += guyArray[i].Name + " heeft gewonnen !\n";
-                            
+                            guyArray[i].myBet.PayOut();
+                            endMessage += guyArray[i].name + " heeft gewonnen !\n";
                         }
                         else
                         {
-                            endMessage += guyArray[i].Name + " heeft verloren !\n";
+                            endMessage += guyArray[i].name + " heeft verloren !\n";
                         }
                         guyArray[i].myRadioButton.Enabled = true;
                     }
@@ -88,7 +87,6 @@ namespace DeGokkers
                 guyArray[2].ClearBet();
                 MessageBox.Show(endMessage);
             }
-            
         }
 
         private void goButton_Click(object sender, EventArgs e)
@@ -101,6 +99,7 @@ namespace DeGokkers
                 ReindeerArray[i].TakeStartingPosition();
             }
         }
+
         public void InitReindeer()
         {
             ReindeerArray[0] = new Reindeer(dier1, lblfinish1, "1");
@@ -108,22 +107,23 @@ namespace DeGokkers
             ReindeerArray[2] = new Reindeer(dier3, lblfinish3, "3");
             ReindeerArray[3] = new Reindeer(dier4, lblfinish4, "4");
         }
+
         public void InitGuys()
         {
-            guyArray[0] = new Guy(50, "Sietse", lblSietseCash, deelnemer1, Weddenschap1);
-            guyArray[1] = new Guy(75, "Lidy", lblLidyCash, deelnemer2, Weddenschap2);
-            guyArray[2] = new Guy(45, "Fer", lblFerCash, deelnemer3, Weddenschap3);
+            guyArray[0] = new Guy(50, "Sietse", lblSietseCash, deelnemer1, weddenschap1);
+            guyArray[1] = new Guy(75, "Lidy", lblLidyCash, deelnemer2, weddenschap2);
+            guyArray[2] = new Guy(45, "Fer", lblFerCash, deelnemer3, weddenschap3);
         }
+
         public bool CheckFinish()
         {
-
                 if (reindeerFinished == 4)
                 {
                     return false;
                 }
-            
             return true;
         }
+
         public void SetPosition(Reindeer dog)
         {
             switch (reindeerFinished)
@@ -160,6 +160,7 @@ namespace DeGokkers
                 lblNamePlayer.Text = deelnemer3.Text;
             }
         }
+
         private void PictureTransparator()
         {
             //van stackoverflow
@@ -172,6 +173,7 @@ namespace DeGokkers
             dier3.BackColor = Color.Transparent;
             dier4.BackColor = Color.Transparent;
         }
+
         public Guy getTheBettor()
         {
             for (int i = 0; i < 3; i++)
@@ -183,6 +185,7 @@ namespace DeGokkers
             }
             return null;
         }
+
         public Reindeer getTheReindeer()
         {
             switch ((int)hondNummer.Value)

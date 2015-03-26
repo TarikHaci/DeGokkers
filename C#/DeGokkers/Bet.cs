@@ -8,39 +8,30 @@ namespace DeGokkers
     public class Bet
     {
         #region Properties
-        public int Amount; //Het bedrag van de weddenschap.
-        public Reindeer Reindeer; //Het nummer van de hond waarop weddenschap is afgesloten.
-        public Guy Bettor; //De gokker die gewed heeft.
-
+        public int amount; //Het bedrag van de weddenschap.
+        public Reindeer reindeer; //Het nummer van de hond waarop weddenschap is afgesloten.
+        public Guy bettor; //De gokker die gewed heeft.
         #endregion
 
         #region Constructor
-        public Bet(int Amount, Reindeer Reindeer, Guy Bettor)
+        public Bet(int amount, Reindeer reindeer, Guy bettor)
         {
-            this.Amount = Amount;
-            this.Reindeer = Reindeer;
-            this.Bettor = Bettor;
+            this.amount = amount;
+            this.reindeer = reindeer;
+            this.bettor = bettor;
         }
         #endregion
-        
 
-
+        #region Methods
         public string GetDescription()
         {
-            //Retourneer een string die aangeeft wie de weddenschap heeft gedaan,
-            
-            //voor welk bedrag er is gewed en op welke hond er is gewed.
-            //Bijv. “Sietse wedt 8 euro op hond 4”.
-            //Als het bedrag 0 is, is er geen weddenschap geplaatst.
-            //De string die dan geretourneerd wordt is bijv.
-            //“Sietse heeft geen weddenschap geplaatst.”)
-            return Bettor.Name + " heeft " + Amount + " Euro op rendier " + Reindeer.GetName() + " gewed";
-         }
+            return bettor.name + " heeft " + amount + " Euro op rendier " + reindeer.GetName() + " gewed";
+        }
         
-
         public void PayOut()
         {
-            Bettor.Cash += Amount * 2;
+            bettor.Cash += amount * 2;
         }
+        #endregion
     }
 }
