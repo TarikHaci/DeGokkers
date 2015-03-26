@@ -13,3 +13,11 @@ C:\Users\Tarik\Desktop\DeGokkers\obj\Debug\DeGokkers.csprojResolveAssemblyRefere
 C:\Users\Tarik\Desktop\DeGokkers\obj\Debug\DeGokkers.FormRenbaan.resources
 C:\Users\Tarik\Desktop\DeGokkers\obj\Debug\DeGokkers.Properties.Resources.resources
 C:\Users\Tarik\Desktop\DeGokkers\obj\Debug\DeGokkers.csproj.GenerateResource.Cache
+C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\DeGokkers\obj\Debug\Disign form.exe
+C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\DeGokkers\obj\Debug\Disign form.pdb
+C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\DeGokkers\bin\Debug\Disign form.exe
+C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\DeGokkers\bin\Debug\Disign form.pdb
+C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\DeGokkers\obj\Debug\DeGokkers.csprojResolveAssemblyReference.cache
+C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\DeGokkers\obj\Debug\DeGokkers.FormRenbaan.resources
+C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\DeGokkers\obj\Debug\DeGokkers.Properties.Resources.resources
+C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\DeGokkers\obj\Debug\DeGokkers.csproj.GenerateResource.Cache

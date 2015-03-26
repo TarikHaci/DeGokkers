@@ -29,7 +29,7 @@ namespace DeGokkers
             Reindeer ReindeerChoice = getTheReindeer();
             int amount = (int)wedtEuro.Value;
 
-            if (bettor.PlaceBet(amount, ReindeerChoice))
+            if (bettor != null && bettor.PlaceBet(amount, ReindeerChoice))
             {
                 bettor.myTextBox.Text = bettor.MyBet.GetDescription();
             }
@@ -59,7 +59,7 @@ namespace DeGokkers
             {
                 //END OF THE RACE
                 string endMessage = "Finish ! \n";
-
+                //ReindeerArray.get
                 for (int i = 0; i < guyArray.Length; i++)
                 {
                     //check voor elke mensen als hij heeft gewedt of niet
@@ -68,21 +68,24 @@ namespace DeGokkers
                         if (guyArray[i].MyBet.Dog.GetPosition() == Position.first)
                         {
                             guyArray[i].MyBet.PayOut();
-                            endMessage += guyArray[i].Name + "Have win !\n";
+                            endMessage += guyArray[i].Name + " heeft gewonnen !\n";
                             
                         }
                         else
                         {
-                            endMessage += guyArray[i].Name + "Have Lost !\n";
+                            endMessage += guyArray[i].Name + " heeft verloren !\n";
                         }
                         guyArray[i].myRadioButton.Enabled = true;
                     }
                 }
                 tmrDog.Enabled = false;
-                //MessageBox.Show("Alle rendieren zijn gefinisht!");
+                //Alle rendieren zijn gefinisht!
                 goButton.Enabled = true;
                 wedtButton.Enabled = true;
                 dogFinished = 0;
+                guyArray[0].ClearBet();
+                guyArray[1].ClearBet();
+                guyArray[2].ClearBet();
                 MessageBox.Show(endMessage);
             }
             

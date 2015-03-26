@@ -64,6 +64,7 @@ namespace DeGokkers
         public void SetFinish()
         {
             MyPictureBox.Image = Properties.Resources.rendeergif2static;
+            MyPictureBox.Left = 0;
             isFinish = true;
         }
         public Position GetPosition()

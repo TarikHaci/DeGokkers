@@ -69,6 +69,7 @@ namespace DeGokkers
                 HaveBet = true;
                 Cash -= amount;
                 myRadioButton.Enabled = false;
+                myRadioButton.Checked = false;
                 return true;
             }
 
@@ -78,6 +79,7 @@ namespace DeGokkers
         public void ClearBet()
         {
             myTextBox.Text = Name + " heeft nog geen weddenscap geplaatst";
+            HaveBet = false;
         }
 
         public void Collect(int Winner)

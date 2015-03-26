@@ -292,7 +292,7 @@
             // lblfinish1
             // 
             this.lblfinish1.AutoSize = true;
-            this.lblfinish1.Location = new System.Drawing.Point(1059, 35);
+            this.lblfinish1.Location = new System.Drawing.Point(1059, 32);
             this.lblfinish1.Name = "lblfinish1";
             this.lblfinish1.Size = new System.Drawing.Size(40, 17);
             this.lblfinish1.TabIndex = 31;
@@ -301,7 +301,7 @@
             // lblfinish2
             // 
             this.lblfinish2.AutoSize = true;
-            this.lblfinish2.Location = new System.Drawing.Point(1059, 126);
+            this.lblfinish2.Location = new System.Drawing.Point(1059, 122);
             this.lblfinish2.Name = "lblfinish2";
             this.lblfinish2.Size = new System.Drawing.Size(40, 17);
             this.lblfinish2.TabIndex = 32;
@@ -310,7 +310,7 @@
             // lblfinish4
             // 
             this.lblfinish4.AutoSize = true;
-            this.lblfinish4.Location = new System.Drawing.Point(1059, 302);
+            this.lblfinish4.Location = new System.Drawing.Point(1059, 283);
             this.lblfinish4.Name = "lblfinish4";
             this.lblfinish4.Size = new System.Drawing.Size(40, 17);
             this.lblfinish4.TabIndex = 34;
@@ -319,7 +319,7 @@
             // lblfinish3
             // 
             this.lblfinish3.AutoSize = true;
-            this.lblfinish3.Location = new System.Drawing.Point(1059, 206);
+            this.lblfinish3.Location = new System.Drawing.Point(1059, 199);
             this.lblfinish3.Name = "lblfinish3";
             this.lblfinish3.Size = new System.Drawing.Size(40, 17);
             this.lblfinish3.TabIndex = 33;
