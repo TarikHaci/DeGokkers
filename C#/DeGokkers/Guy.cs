@@ -59,13 +59,13 @@ namespace DeGokkers
             //MyLabel.Text = Cash.ToString();
         }
 
-        public bool PlaceBet(int amount, Reindeer Dog)
+        public bool PlaceBet(int amount, Reindeer Reindeer)
         {
             UpdateLabels();
             
             if (amount <= Cash)
             {
-                MyBet = new Bet(amount, Dog, this);
+                MyBet = new Bet(amount, Reindeer, this);
                 HaveBet = true;
                 Cash -= amount;
                 myRadioButton.Enabled = false;

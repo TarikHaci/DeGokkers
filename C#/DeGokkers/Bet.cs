@@ -9,16 +9,16 @@ namespace DeGokkers
     {
         #region Properties
         public int Amount; //Het bedrag van de weddenschap.
-        public Reindeer Dog; //Het nummer van de hond waarop weddenschap is afgesloten.
+        public Reindeer Reindeer; //Het nummer van de hond waarop weddenschap is afgesloten.
         public Guy Bettor; //De gokker die gewed heeft.
 
         #endregion
 
         #region Constructor
-        public Bet(int Amount, Reindeer Dog, Guy Bettor)
+        public Bet(int Amount, Reindeer Reindeer, Guy Bettor)
         {
             this.Amount = Amount;
-            this.Dog = Dog;
+            this.Reindeer = Reindeer;
             this.Bettor = Bettor;
         }
         #endregion
@@ -34,7 +34,7 @@ namespace DeGokkers
             //Als het bedrag 0 is, is er geen weddenschap geplaatst.
             //De string die dan geretourneerd wordt is bijv.
             //“Sietse heeft geen weddenschap geplaatst.”)
-            return Bettor.Name + " heeft " + Amount + " Euro op rendier " + Dog.GetName() + " gewed";
+            return Bettor.Name + " heeft " + Amount + " Euro op rendier " + Reindeer.GetName() + " gewed";
          }
         
 

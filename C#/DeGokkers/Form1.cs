@@ -14,12 +14,12 @@ namespace DeGokkers
         Random rand = new Random();
         Reindeer[] ReindeerArray = new Reindeer[4];
         Guy[] guyArray = new Guy[3];
-        int dogFinished = 0;
+        int reindeerFinished = 0;
         public FormRenbaan()
         {
             InitializeComponent();
             PictureTransparator();
-            InitDogs();
+            InitReindeer();
             InitGuys();
         }
 
@@ -35,9 +35,9 @@ namespace DeGokkers
             }
         }
 
-        private void tmrDog_Tick(object sender, EventArgs e)
+        private void tmrReindeer_Tick(object sender, EventArgs e)
         {
-            if (dogFinished < 4)
+            if (reindeerFinished < 4)
             {
                 for (int i = 0; i < ReindeerArray.Length; i++)
                 {
@@ -51,7 +51,7 @@ namespace DeGokkers
                         SetPosition(ReindeerArray[i]);
                         ReindeerArray[i].RefreshLabel();
                         ReindeerArray[i].SetFinish();
-                        dogFinished++;
+                        reindeerFinished++;
                     }
                 }
             }
@@ -65,7 +65,7 @@ namespace DeGokkers
                     //check voor elke mensen als hij heeft gewedt of niet
                     if (guyArray[i].HaveBet)
                     {
-                        if (guyArray[i].MyBet.Dog.GetPosition() == Position.first)
+                        if (guyArray[i].MyBet.Reindeer.GetPosition() == Position.first)
                         {
                             guyArray[i].MyBet.PayOut();
                             endMessage += guyArray[i].Name + " heeft gewonnen !\n";
@@ -78,11 +78,11 @@ namespace DeGokkers
                         guyArray[i].myRadioButton.Enabled = true;
                     }
                 }
-                tmrDog.Enabled = false;
+                tmrReindeer.Enabled = false;
                 //Alle rendieren zijn gefinisht!
                 goButton.Enabled = true;
                 wedtButton.Enabled = true;
-                dogFinished = 0;
+                reindeerFinished = 0;
                 guyArray[0].ClearBet();
                 guyArray[1].ClearBet();
                 guyArray[2].ClearBet();
@@ -95,13 +95,13 @@ namespace DeGokkers
         {
             goButton.Enabled = false;
             wedtButton.Enabled = false;
-            tmrDog.Enabled = true;
+            tmrReindeer.Enabled = true;
             for (int i = 0; i < ReindeerArray.Length; i++)
             {
                 ReindeerArray[i].TakeStartingPosition();
             }
         }
-        public void InitDogs()
+        public void InitReindeer()
         {
             ReindeerArray[0] = new Reindeer(dier1, lblfinish1, "1");
             ReindeerArray[1] = new Reindeer(dier2, lblfinish2, "2");
@@ -117,7 +117,7 @@ namespace DeGokkers
         public bool CheckFinish()
         {
 
-                if (dogFinished == 4)
+                if (reindeerFinished == 4)
                 {
                     return false;
                 }
@@ -126,7 +126,7 @@ namespace DeGokkers
         }
         public void SetPosition(Reindeer dog)
         {
-            switch (dogFinished)
+            switch (reindeerFinished)
             {
                 case 0:
                     dog.SetPosition(Position.first);

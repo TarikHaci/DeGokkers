@@ -21,3 +21,11 @@ C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\DeGokkers\obj\Debug\DeGokkers.cspro
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\DeGokkers\obj\Debug\DeGokkers.FormRenbaan.resources
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\DeGokkers\obj\Debug\DeGokkers.Properties.Resources.resources
 C:\Users\Tarik\Documents\GitHub\DeGokkers\C#\DeGokkers\obj\Debug\DeGokkers.csproj.GenerateResource.Cache
+C:\Users\stijno666\Desktop\school\Lessen\ps\leerjaar_1\Periode_3\DeGokkers\C#\DeGokkers\obj\Debug\Disign form.exe
+C:\Users\stijno666\Desktop\school\Lessen\ps\leerjaar_1\Periode_3\DeGokkers\C#\DeGokkers\obj\Debug\Disign form.pdb
+C:\Users\stijno666\Desktop\school\Lessen\ps\leerjaar_1\Periode_3\DeGokkers\C#\DeGokkers\obj\Debug\DeGokkers.csprojResolveAssemblyReference.cache
+C:\Users\stijno666\Desktop\school\Lessen\ps\leerjaar_1\Periode_3\DeGokkers\C#\DeGokkers\obj\Debug\DeGokkers.FormRenbaan.resources
+C:\Users\stijno666\Desktop\school\Lessen\ps\leerjaar_1\Periode_3\DeGokkers\C#\DeGokkers\obj\Debug\DeGokkers.Properties.Resources.resources
+C:\Users\stijno666\Desktop\school\Lessen\ps\leerjaar_1\Periode_3\DeGokkers\C#\DeGokkers\obj\Debug\DeGokkers.csproj.GenerateResource.Cache
+C:\Users\stijno666\Desktop\school\Lessen\ps\leerjaar_1\Periode_3\DeGokkers\C#\DeGokkers\bin\Debug\Disign form.exe
+C:\Users\stijno666\Desktop\school\Lessen\ps\leerjaar_1\Periode_3\DeGokkers\C#\DeGokkers\bin\Debug\Disign form.pdb
